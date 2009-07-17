@@ -1,7 +1,8 @@
 from random import randint
+from math import *
 
-def build_list(n):
-    return [randint(1,1000000) for i in xrange(n)]
+def build_list(n, min=1, max=1000000):
+    return [randint(min,max) for i in xrange(n + 1)]
 
 def bubble(l):
     swapped = True
@@ -30,8 +31,10 @@ def concat(less, pivot, greater):
 
     return final
         
+quickcount = 0
 def quick(l):
-    print "# quick #"
+    global quickcount
+    #print "# quick #"
     if len(l) <= 1:
         return l
 
@@ -40,7 +43,8 @@ def quick(l):
     less = []
     greater = []
     for i in range(len(l)):
-        print "looking at pivot %d and %d" % (pivot, l[i])
+        quickcount += 1
+        #print "looking at pivot %d and %d" % (pivot, l[i])
         if l[i] > pivot: 
             greater.append(l[i])
         else:
@@ -52,14 +56,25 @@ def quick(l):
 
 l = build_list(100)
 iter = bubble(l)
-print "Required %d iterations from %d items" % (iter, len(l))
+print "Required %d iterations from %d items bounded by %d" % (iter, len(l), len(l) * len(l))
 
 l.reverse()
 iter = bubble(l)
-print "Required %d iterations from %d items" % (iter, len(l))
+print "Required %d iterations from %d items bounded by %d" % (iter, len(l), len(l) * len(l))
 
 print "######################"
 
-x = build_list(100)
-quick(x)
+x = build_list(10, 1, 10)
+print x
+quickcount = 0
+x = quick(x)
+print x
+print "Required %d iterations from %d items bounded by %d" % (quickcount, len(x), (len(x) * log(len(x), 2)))
+
+x.reverse()
+print x
+quickcount = 0
+x = quick(x)
+print x
+print "Required %d iterations from %d items bounded by %d" % (quickcount, len(x), (len(x) * log(len(x), 2)))
 
