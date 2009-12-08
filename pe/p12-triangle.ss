@@ -23,7 +23,7 @@
   (lambda (n start)
     (cond
       ((> (divisorsf (triangle-number start)) n)
-       start)
+       (fprintf (current-output-port) "recurring with ~a ~a\n" start (triangle-number start)))
       (else (and (fprintf (current-output-port) "recurring with ~a ~a\n" start (triangle-number start)) 
                  (find-triangle n (+ 1 start)))))))
 
