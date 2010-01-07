@@ -26,11 +26,9 @@
 (define (sqrt x)
   (sqrt-iter 1.0 x))
 
-
-
-
 (sqrt 3)
 (sqrt 9)
+(sqrt 0.001)
 (sqrt 4294967296)
 (sqrt (+ 1099511627776 5))
 (sqrt 0.002)

@@ -1,0 +1,1380 @@
+[[8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8], [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0], [81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30, 3, 49, 13, 36, 65], [52, 70, 95, 23, 4, 60, 11, 42, 69, 24, 68, 56, 1, 32, 56, 71, 37, 2, 36, 91], [22, 31, 16, 71, 51, 67, 63, 89, 41, 92, 36, 54, 22, 40, 40, 28, 66, 33, 13, 80], [24, 47, 32, 60, 99, 3, 45, 2, 44, 75, 33, 53, 78, 36, 84, 20, 35, 17, 12, 50], [32, 98, 81, 28, 64, 23, 67, 10, 26, 38, 40, 67, 59, 54, 70, 66, 18, 38, 64, 70], [67, 26, 20, 68, 2, 62, 12, 20, 95, 63, 94, 39, 63, 8, 40, 91, 66, 49, 94, 21], [24, 55, 58, 5, 66, 73, 99, 26, 97, 17, 78, 78, 96, 83, 14, 88, 34, 89, 63, 72], [21, 36, 23, 9, 75, 0, 76, 44, 20, 45, 35, 14, 0, 61, 33, 97, 34, 31, 33, 95], [78, 17, 53, 28, 22, 75, 31, 67, 15, 94, 3, 80, 4, 62, 16, 14, 9, 53, 56, 92], [16, 39, 5, 42, 96, 35, 31, 47, 55, 58, 88, 24, 0, 17, 54, 24, 36, 29, 85, 57], [86, 56, 0, 48, 35, 71, 89, 7, 5, 44, 44, 37, 44, 60, 21, 58, 51, 54, 17, 58], [19, 80, 81, 68, 5, 94, 47, 69, 28, 73, 92, 13, 86, 52, 17, 77, 4, 89, 55, 40], [4, 52, 8, 83, 97, 35, 99, 16, 7, 97, 57, 32, 16, 26, 26, 79, 33, 27, 98, 66], [88, 36, 68, 87, 57, 62, 20, 72, 3, 46, 33, 67, 46, 55, 12, 32, 63, 93, 53, 69], [4, 42, 16, 73, 38, 25, 39, 11, 24, 94, 72, 18, 8, 46, 29, 32, 40, 62, 76, 36], [20, 69, 36, 41, 72, 30, 23, 88, 34, 62, 99, 69, 82, 67, 59, 85, 74, 4, 36, 16], [20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54], [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]]
+summing row 0 and col 0
+summing row 0 and col 1
+summing row 0 and col 2
+summing row 0 and col 3
+summing row 0 and col 4
+summing row 0 and col 5
+summing row 0 and col 6
+summing row 0 and col 7
+summing row 0 and col 8
+summing row 0 and col 9
+summing row 0 and col 10
+summing row 0 and col 11
+summing row 0 and col 12
+summing row 0 and col 13
+summing row 0 and col 14
+summing row 0 and col 15
+summing row 0 and col 16
+summing row 0 and col 17
+summing row 0 and col 18
+summing row 0 and col 19
+summing row 1 and col 0
+summing row 1 and col 1
+summing row 1 and col 2
+summing row 1 and col 3
+summing row 1 and col 4
+summing row 1 and col 5
+summing row 1 and col 6
+summing row 1 and col 7
+summing row 1 and col 8
+summing row 1 and col 9
+summing row 1 and col 10
+summing row 1 and col 11
+summing row 1 and col 12
+summing row 1 and col 13
+summing row 1 and col 14
+summing row 1 and col 15
+summing row 1 and col 16
+summing row 1 and col 17
+summing row 1 and col 18
+summing row 1 and col 19
+summing row 2 and col 0
+summing row 2 and col 1
+summing row 2 and col 2
+summing row 2 and col 3
+summing row 2 and col 4
+summing row 2 and col 5
+summing row 2 and col 6
+summing row 2 and col 7
+summing row 2 and col 8
+summing row 2 and col 9
+summing row 2 and col 10
+summing row 2 and col 11
+summing row 2 and col 12
+summing row 2 and col 13
+summing row 2 and col 14
+summing row 2 and col 15
+summing row 2 and col 16
+summing row 2 and col 17
+summing row 2 and col 18
+summing row 2 and col 19
+summing row 3 and col 0
+summing row 3 and col 1
+summing row 3 and col 2
+summing row 3 and col 3
+summing row 3 and col 4
+summing row 3 and col 5
+summing row 3 and col 6
+summing row 3 and col 7
+summing row 3 and col 8
+summing row 3 and col 9
+summing row 3 and col 10
+summing row 3 and col 11
+summing row 3 and col 12
+summing row 3 and col 13
+summing row 3 and col 14
+summing row 3 and col 15
+summing row 3 and col 16
+summing row 3 and col 17
+summing row 3 and col 18
+summing row 3 and col 19
+summing row 4 and col 0
+summing row 4 and col 1
+summing row 4 and col 2
+summing row 4 and col 3
+summing row 4 and col 4
+summing row 4 and col 5
+summing row 4 and col 6
+summing row 4 and col 7
+summing row 4 and col 8
+summing row 4 and col 9
+summing row 4 and col 10
+summing row 4 and col 11
+summing row 4 and col 12
+summing row 4 and col 13
+summing row 4 and col 14
+summing row 4 and col 15
+summing row 4 and col 16
+summing row 4 and col 17
+summing row 4 and col 18
+summing row 4 and col 19
+summing row 5 and col 0
+summing row 5 and col 1
+summing row 5 and col 2
+summing row 5 and col 3
+summing row 5 and col 4
+summing row 5 and col 5
+summing row 5 and col 6
+summing row 5 and col 7
+summing row 5 and col 8
+summing row 5 and col 9
+summing row 5 and col 10
+summing row 5 and col 11
+summing row 5 and col 12
+summing row 5 and col 13
+summing row 5 and col 14
+summing row 5 and col 15
+summing row 5 and col 16
+summing row 5 and col 17
+summing row 5 and col 18
+summing row 5 and col 19
+summing row 6 and col 0
+summing row 6 and col 1
+summing row 6 and col 2
+summing row 6 and col 3
+summing row 6 and col 4
+summing row 6 and col 5
+summing row 6 and col 6
+summing row 6 and col 7
+summing row 6 and col 8
+summing row 6 and col 9
+summing row 6 and col 10
+summing row 6 and col 11
+summing row 6 and col 12
+summing row 6 and col 13
+summing row 6 and col 14
+summing row 6 and col 15
+summing row 6 and col 16
+summing row 6 and col 17
+summing row 6 and col 18
+summing row 6 and col 19
+summing row 7 and col 0
+summing row 7 and col 1
+summing row 7 and col 2
+summing row 7 and col 3
+summing row 7 and col 4
+summing row 7 and col 5
+summing row 7 and col 6
+summing row 7 and col 7
+summing row 7 and col 8
+summing row 7 and col 9
+summing row 7 and col 10
+summing row 7 and col 11
+summing row 7 and col 12
+summing row 7 and col 13
+summing row 7 and col 14
+summing row 7 and col 15
+summing row 7 and col 16
+summing row 7 and col 17
+summing row 7 and col 18
+summing row 7 and col 19
+summing row 8 and col 0
+summing row 8 and col 1
+summing row 8 and col 2
+summing row 8 and col 3
+summing row 8 and col 4
+summing row 8 and col 5
+summing row 8 and col 6
+summing row 8 and col 7
+summing row 8 and col 8
+summing row 8 and col 9
+summing row 8 and col 10
+summing row 8 and col 11
+summing row 8 and col 12
+summing row 8 and col 13
+summing row 8 and col 14
+summing row 8 and col 15
+summing row 8 and col 16
+summing row 8 and col 17
+summing row 8 and col 18
+summing row 8 and col 19
+summing row 9 and col 0
+summing row 9 and col 1
+summing row 9 and col 2
+summing row 9 and col 3
+summing row 9 and col 4
+summing row 9 and col 5
+summing row 9 and col 6
+summing row 9 and col 7
+summing row 9 and col 8
+summing row 9 and col 9
+summing row 9 and col 10
+summing row 9 and col 11
+summing row 9 and col 12
+summing row 9 and col 13
+summing row 9 and col 14
+summing row 9 and col 15
+summing row 9 and col 16
+summing row 9 and col 17
+summing row 9 and col 18
+summing row 9 and col 19
+summing row 10 and col 0
+summing row 10 and col 1
+summing row 10 and col 2
+summing row 10 and col 3
+summing row 10 and col 4
+summing row 10 and col 5
+summing row 10 and col 6
+summing row 10 and col 7
+summing row 10 and col 8
+summing row 10 and col 9
+summing row 10 and col 10
+summing row 10 and col 11
+summing row 10 and col 12
+summing row 10 and col 13
+summing row 10 and col 14
+summing row 10 and col 15
+summing row 10 and col 16
+summing row 10 and col 17
+summing row 10 and col 18
+summing row 10 and col 19
+summing row 11 and col 0
+summing row 11 and col 1
+summing row 11 and col 2
+summing row 11 and col 3
+summing row 11 and col 4
+summing row 11 and col 5
+summing row 11 and col 6
+summing row 11 and col 7
+summing row 11 and col 8
+summing row 11 and col 9
+summing row 11 and col 10
+summing row 11 and col 11
+summing row 11 and col 12
+summing row 11 and col 13
+summing row 11 and col 14
+summing row 11 and col 15
+summing row 11 and col 16
+summing row 11 and col 17
+summing row 11 and col 18
+summing row 11 and col 19
+summing row 12 and col 0
+summing row 12 and col 1
+summing row 12 and col 2
+summing row 12 and col 3
+summing row 12 and col 4
+summing row 12 and col 5
+summing row 12 and col 6
+summing row 12 and col 7
+summing row 12 and col 8
+summing row 12 and col 9
+summing row 12 and col 10
+summing row 12 and col 11
+summing row 12 and col 12
+summing row 12 and col 13
+summing row 12 and col 14
+summing row 12 and col 15
+summing row 12 and col 16
+summing row 12 and col 17
+summing row 12 and col 18
+summing row 12 and col 19
+summing row 13 and col 0
+summing row 13 and col 1
+summing row 13 and col 2
+summing row 13 and col 3
+summing row 13 and col 4
+summing row 13 and col 5
+summing row 13 and col 6
+summing row 13 and col 7
+summing row 13 and col 8
+summing row 13 and col 9
+summing row 13 and col 10
+summing row 13 and col 11
+summing row 13 and col 12
+summing row 13 and col 13
+summing row 13 and col 14
+summing row 13 and col 15
+summing row 13 and col 16
+summing row 13 and col 17
+summing row 13 and col 18
+summing row 13 and col 19
+summing row 14 and col 0
+summing row 14 and col 1
+summing row 14 and col 2
+summing row 14 and col 3
+summing row 14 and col 4
+summing row 14 and col 5
+summing row 14 and col 6
+summing row 14 and col 7
+summing row 14 and col 8
+summing row 14 and col 9
+summing row 14 and col 10
+summing row 14 and col 11
+summing row 14 and col 12
+summing row 14 and col 13
+summing row 14 and col 14
+summing row 14 and col 15
+summing row 14 and col 16
+summing row 14 and col 17
+summing row 14 and col 18
+summing row 14 and col 19
+summing row 15 and col 0
+summing row 15 and col 1
+summing row 15 and col 2
+summing row 15 and col 3
+summing row 15 and col 4
+summing row 15 and col 5
+summing row 15 and col 6
+summing row 15 and col 7
+summing row 15 and col 8
+summing row 15 and col 9
+summing row 15 and col 10
+summing row 15 and col 11
+summing row 15 and col 12
+summing row 15 and col 13
+summing row 15 and col 14
+summing row 15 and col 15
+summing row 15 and col 16
+summing row 15 and col 17
+summing row 15 and col 18
+summing row 15 and col 19
+summing row 16 and col 0
+summing row 16 and col 1
+summing row 16 and col 2
+summing row 16 and col 3
+summing row 16 and col 4
+summing row 16 and col 5
+summing row 16 and col 6
+summing row 16 and col 7
+summing row 16 and col 8
+summing row 16 and col 9
+summing row 16 and col 10
+summing row 16 and col 11
+summing row 16 and col 12
+summing row 16 and col 13
+summing row 16 and col 14
+summing row 16 and col 15
+summing row 16 and col 16
+summing row 16 and col 17
+summing row 16 and col 18
+summing row 16 and col 19
+summing row 17 and col 0
+summing row 17 and col 1
+summing row 17 and col 2
+summing row 17 and col 3
+summing row 17 and col 4
+summing row 17 and col 5
+summing row 17 and col 6
+summing row 17 and col 7
+summing row 17 and col 8
+summing row 17 and col 9
+summing row 17 and col 10
+summing row 17 and col 11
+summing row 17 and col 12
+summing row 17 and col 13
+summing row 17 and col 14
+summing row 17 and col 15
+summing row 17 and col 16
+summing row 17 and col 17
+summing row 17 and col 18
+summing row 17 and col 19
+summing row 18 and col 0
+summing row 18 and col 1
+summing row 18 and col 2
+summing row 18 and col 3
+summing row 18 and col 4
+summing row 18 and col 5
+summing row 18 and col 6
+summing row 18 and col 7
+summing row 18 and col 8
+summing row 18 and col 9
+summing row 18 and col 10
+summing row 18 and col 11
+summing row 18 and col 12
+summing row 18 and col 13
+summing row 18 and col 14
+summing row 18 and col 15
+summing row 18 and col 16
+summing row 18 and col 17
+summing row 18 and col 18
+summing row 18 and col 19
+summing row 19 and col 0
+summing row 19 and col 1
+summing row 19 and col 2
+summing row 19 and col 3
+summing row 19 and col 4
+summing row 19 and col 5
+summing row 19 and col 6
+summing row 19 and col 7
+summing row 19 and col 8
+summing row 19 and col 9
+summing row 19 and col 10
+summing row 19 and col 11
+summing row 19 and col 12
+summing row 19 and col 13
+summing row 19 and col 14
+summing row 19 and col 15
+summing row 19 and col 16
+summing row 19 and col 17
+summing row 19 and col 18
+summing row 19 and col 19
+summing row 0 and col 0
+summing row 1 and col 0
+summing row 2 and col 0
+summing row 3 and col 0
+summing row 4 and col 0
+summing row 5 and col 0
+summing row 6 and col 0
+summing row 7 and col 0
+summing row 8 and col 0
+summing row 9 and col 0
+summing row 10 and col 0
+summing row 11 and col 0
+summing row 12 and col 0
+summing row 13 and col 0
+summing row 14 and col 0
+summing row 15 and col 0
+summing row 16 and col 0
+summing row 17 and col 0
+summing row 18 and col 0
+summing row 19 and col 0
+summing row 0 and col 1
+summing row 1 and col 1
+summing row 2 and col 1
+summing row 3 and col 1
+summing row 4 and col 1
+summing row 5 and col 1
+summing row 6 and col 1
+summing row 7 and col 1
+summing row 8 and col 1
+summing row 9 and col 1
+summing row 10 and col 1
+summing row 11 and col 1
+summing row 12 and col 1
+summing row 13 and col 1
+summing row 14 and col 1
+summing row 15 and col 1
+summing row 16 and col 1
+summing row 17 and col 1
+summing row 18 and col 1
+summing row 19 and col 1
+summing row 0 and col 2
+summing row 1 and col 2
+summing row 2 and col 2
+summing row 3 and col 2
+summing row 4 and col 2
+summing row 5 and col 2
+summing row 6 and col 2
+summing row 7 and col 2
+summing row 8 and col 2
+summing row 9 and col 2
+summing row 10 and col 2
+summing row 11 and col 2
+summing row 12 and col 2
+summing row 13 and col 2
+summing row 14 and col 2
+summing row 15 and col 2
+summing row 16 and col 2
+summing row 17 and col 2
+summing row 18 and col 2
+summing row 19 and col 2
+summing row 0 and col 3
+summing row 1 and col 3
+summing row 2 and col 3
+summing row 3 and col 3
+summing row 4 and col 3
+summing row 5 and col 3
+summing row 6 and col 3
+summing row 7 and col 3
+summing row 8 and col 3
+summing row 9 and col 3
+summing row 10 and col 3
+summing row 11 and col 3
+summing row 12 and col 3
+summing row 13 and col 3
+summing row 14 and col 3
+summing row 15 and col 3
+summing row 16 and col 3
+summing row 17 and col 3
+summing row 18 and col 3
+summing row 19 and col 3
+summing row 0 and col 4
+summing row 1 and col 4
+summing row 2 and col 4
+summing row 3 and col 4
+summing row 4 and col 4
+summing row 5 and col 4
+summing row 6 and col 4
+summing row 7 and col 4
+summing row 8 and col 4
+summing row 9 and col 4
+summing row 10 and col 4
+summing row 11 and col 4
+summing row 12 and col 4
+summing row 13 and col 4
+summing row 14 and col 4
+summing row 15 and col 4
+summing row 16 and col 4
+summing row 17 and col 4
+summing row 18 and col 4
+summing row 19 and col 4
+summing row 0 and col 5
+summing row 1 and col 5
+summing row 2 and col 5
+summing row 3 and col 5
+summing row 4 and col 5
+summing row 5 and col 5
+summing row 6 and col 5
+summing row 7 and col 5
+summing row 8 and col 5
+summing row 9 and col 5
+summing row 10 and col 5
+summing row 11 and col 5
+summing row 12 and col 5
+summing row 13 and col 5
+summing row 14 and col 5
+summing row 15 and col 5
+summing row 16 and col 5
+summing row 17 and col 5
+summing row 18 and col 5
+summing row 19 and col 5
+summing row 0 and col 6
+summing row 1 and col 6
+summing row 2 and col 6
+summing row 3 and col 6
+summing row 4 and col 6
+summing row 5 and col 6
+summing row 6 and col 6
+summing row 7 and col 6
+summing row 8 and col 6
+summing row 9 and col 6
+summing row 10 and col 6
+summing row 11 and col 6
+summing row 12 and col 6
+summing row 13 and col 6
+summing row 14 and col 6
+summing row 15 and col 6
+summing row 16 and col 6
+summing row 17 and col 6
+summing row 18 and col 6
+summing row 19 and col 6
+summing row 0 and col 7
+summing row 1 and col 7
+summing row 2 and col 7
+summing row 3 and col 7
+summing row 4 and col 7
+summing row 5 and col 7
+summing row 6 and col 7
+summing row 7 and col 7
+summing row 8 and col 7
+summing row 9 and col 7
+summing row 10 and col 7
+summing row 11 and col 7
+summing row 12 and col 7
+summing row 13 and col 7
+summing row 14 and col 7
+summing row 15 and col 7
+summing row 16 and col 7
+summing row 17 and col 7
+summing row 18 and col 7
+summing row 19 and col 7
+summing row 0 and col 8
+summing row 1 and col 8
+summing row 2 and col 8
+summing row 3 and col 8
+summing row 4 and col 8
+summing row 5 and col 8
+summing row 6 and col 8
+summing row 7 and col 8
+summing row 8 and col 8
+summing row 9 and col 8
+summing row 10 and col 8
+summing row 11 and col 8
+summing row 12 and col 8
+summing row 13 and col 8
+summing row 14 and col 8
+summing row 15 and col 8
+summing row 16 and col 8
+summing row 17 and col 8
+summing row 18 and col 8
+summing row 19 and col 8
+summing row 0 and col 9
+summing row 1 and col 9
+summing row 2 and col 9
+summing row 3 and col 9
+summing row 4 and col 9
+summing row 5 and col 9
+summing row 6 and col 9
+summing row 7 and col 9
+summing row 8 and col 9
+summing row 9 and col 9
+summing row 10 and col 9
+summing row 11 and col 9
+summing row 12 and col 9
+summing row 13 and col 9
+summing row 14 and col 9
+summing row 15 and col 9
+summing row 16 and col 9
+summing row 17 and col 9
+summing row 18 and col 9
+summing row 19 and col 9
+summing row 0 and col 10
+summing row 1 and col 10
+summing row 2 and col 10
+summing row 3 and col 10
+summing row 4 and col 10
+summing row 5 and col 10
+summing row 6 and col 10
+summing row 7 and col 10
+summing row 8 and col 10
+summing row 9 and col 10
+summing row 10 and col 10
+summing row 11 and col 10
+summing row 12 and col 10
+summing row 13 and col 10
+summing row 14 and col 10
+summing row 15 and col 10
+summing row 16 and col 10
+summing row 17 and col 10
+summing row 18 and col 10
+summing row 19 and col 10
+summing row 0 and col 11
+summing row 1 and col 11
+summing row 2 and col 11
+summing row 3 and col 11
+summing row 4 and col 11
+summing row 5 and col 11
+summing row 6 and col 11
+summing row 7 and col 11
+summing row 8 and col 11
+summing row 9 and col 11
+summing row 10 and col 11
+summing row 11 and col 11
+summing row 12 and col 11
+summing row 13 and col 11
+summing row 14 and col 11
+summing row 15 and col 11
+summing row 16 and col 11
+summing row 17 and col 11
+summing row 18 and col 11
+summing row 19 and col 11
+summing row 0 and col 12
+summing row 1 and col 12
+summing row 2 and col 12
+summing row 3 and col 12
+summing row 4 and col 12
+summing row 5 and col 12
+summing row 6 and col 12
+summing row 7 and col 12
+summing row 8 and col 12
+summing row 9 and col 12
+summing row 10 and col 12
+summing row 11 and col 12
+summing row 12 and col 12
+summing row 13 and col 12
+summing row 14 and col 12
+summing row 15 and col 12
+summing row 16 and col 12
+summing row 17 and col 12
+summing row 18 and col 12
+summing row 19 and col 12
+summing row 0 and col 13
+summing row 1 and col 13
+summing row 2 and col 13
+summing row 3 and col 13
+summing row 4 and col 13
+summing row 5 and col 13
+summing row 6 and col 13
+summing row 7 and col 13
+summing row 8 and col 13
+summing row 9 and col 13
+summing row 10 and col 13
+summing row 11 and col 13
+summing row 12 and col 13
+summing row 13 and col 13
+summing row 14 and col 13
+summing row 15 and col 13
+summing row 16 and col 13
+summing row 17 and col 13
+summing row 18 and col 13
+summing row 19 and col 13
+summing row 0 and col 14
+summing row 1 and col 14
+summing row 2 and col 14
+summing row 3 and col 14
+summing row 4 and col 14
+summing row 5 and col 14
+summing row 6 and col 14
+summing row 7 and col 14
+summing row 8 and col 14
+summing row 9 and col 14
+summing row 10 and col 14
+summing row 11 and col 14
+summing row 12 and col 14
+summing row 13 and col 14
+summing row 14 and col 14
+summing row 15 and col 14
+summing row 16 and col 14
+summing row 17 and col 14
+summing row 18 and col 14
+summing row 19 and col 14
+summing row 0 and col 15
+summing row 1 and col 15
+summing row 2 and col 15
+summing row 3 and col 15
+summing row 4 and col 15
+summing row 5 and col 15
+summing row 6 and col 15
+summing row 7 and col 15
+summing row 8 and col 15
+summing row 9 and col 15
+summing row 10 and col 15
+summing row 11 and col 15
+summing row 12 and col 15
+summing row 13 and col 15
+summing row 14 and col 15
+summing row 15 and col 15
+summing row 16 and col 15
+summing row 17 and col 15
+summing row 18 and col 15
+summing row 19 and col 15
+summing row 0 and col 16
+summing row 1 and col 16
+summing row 2 and col 16
+summing row 3 and col 16
+summing row 4 and col 16
+summing row 5 and col 16
+summing row 6 and col 16
+summing row 7 and col 16
+summing row 8 and col 16
+summing row 9 and col 16
+summing row 10 and col 16
+summing row 11 and col 16
+summing row 12 and col 16
+summing row 13 and col 16
+summing row 14 and col 16
+summing row 15 and col 16
+summing row 16 and col 16
+summing row 17 and col 16
+summing row 18 and col 16
+summing row 19 and col 16
+summing row 0 and col 17
+summing row 1 and col 17
+summing row 2 and col 17
+summing row 3 and col 17
+summing row 4 and col 17
+summing row 5 and col 17
+summing row 6 and col 17
+summing row 7 and col 17
+summing row 8 and col 17
+summing row 9 and col 17
+summing row 10 and col 17
+summing row 11 and col 17
+summing row 12 and col 17
+summing row 13 and col 17
+summing row 14 and col 17
+summing row 15 and col 17
+summing row 16 and col 17
+summing row 17 and col 17
+summing row 18 and col 17
+summing row 19 and col 17
+summing row 0 and col 18
+summing row 1 and col 18
+summing row 2 and col 18
+summing row 3 and col 18
+summing row 4 and col 18
+summing row 5 and col 18
+summing row 6 and col 18
+summing row 7 and col 18
+summing row 8 and col 18
+summing row 9 and col 18
+summing row 10 and col 18
+summing row 11 and col 18
+summing row 12 and col 18
+summing row 13 and col 18
+summing row 14 and col 18
+summing row 15 and col 18
+summing row 16 and col 18
+summing row 17 and col 18
+summing row 18 and col 18
+summing row 19 and col 18
+summing row 0 and col 19
+summing row 1 and col 19
+summing row 2 and col 19
+summing row 3 and col 19
+summing row 4 and col 19
+summing row 5 and col 19
+summing row 6 and col 19
+summing row 7 and col 19
+summing row 8 and col 19
+summing row 9 and col 19
+summing row 10 and col 19
+summing row 11 and col 19
+summing row 12 and col 19
+summing row 13 and col 19
+summing row 14 and col 19
+summing row 15 and col 19
+summing row 16 and col 19
+summing row 17 and col 19
+summing row 18 and col 19
+summing row 19 and col 19
+dl product  [0, 1, 2, 3] [3, 2, 1, 0] 24468444
+dl product  [0, 1, 2, 3] [4, 3, 2, 1] 3298400
+dl product  [0, 1, 2, 3] [5, 4, 3, 2] 1768425
+dl product  [0, 1, 2, 3] [6, 5, 4, 3] 0
+dl product  [0, 1, 2, 3] [7, 6, 5, 4] 227520
+dl product  [0, 1, 2, 3] [8, 7, 6, 5] 0
+dl product  [0, 1, 2, 3] [9, 8, 7, 6] 1435500
+dl product  [0, 1, 2, 3] [10, 9, 8, 7] 1359288
+dl product  [0, 1, 2, 3] [11, 10, 9, 8] 416415
+dl product  [0, 1, 2, 3] [12, 11, 10, 9] 268800
+dl product  [0, 1, 2, 3] [13, 12, 11, 10] 34826064
+dl product  [0, 1, 2, 3] [14, 13, 12, 11] 6636448
+dl product  [0, 1, 2, 3] [15, 14, 13, 12] 72864
+dl product  [0, 1, 2, 3] [16, 15, 14, 13] 2304000
+dl product  [0, 1, 2, 3] [17, 16, 15, 14] 51744
+dl product  [0, 1, 2, 3] [18, 17, 16, 15] 17728984
+dl product  [0, 1, 2, 3] [19, 18, 17, 16] 238576
+dl product  [1, 2, 3, 4] [3, 2, 1, 0] 1909600
+dl product  [1, 2, 3, 4] [4, 3, 2, 1] 3654745
+dl product  [1, 2, 3, 4] [5, 4, 3, 2] 1639440
+dl product  [1, 2, 3, 4] [6, 5, 4, 3] 403848
+dl product  [1, 2, 3, 4] [7, 6, 5, 4] 2441880
+dl product  [1, 2, 3, 4] [8, 7, 6, 5] 1282380
+dl product  [1, 2, 3, 4] [9, 8, 7, 6] 21408786
+dl product  [1, 2, 3, 4] [10, 9, 8, 7] 7412187
+dl product  [1, 2, 3, 4] [11, 10, 9, 8] 1574400
+dl product  [1, 2, 3, 4] [12, 11, 10, 9] 41076896
+dl product  [1, 2, 3, 4] [13, 12, 11, 10] 4594464
+dl product  [1, 2, 3, 4] [14, 13, 12, 11] 327888
+dl product  [1, 2, 3, 4] [15, 14, 13, 12] 1013760
+dl product  [1, 2, 3, 4] [16, 15, 14, 13] 26880
+dl product  [1, 2, 3, 4] [17, 16, 15, 14] 7792960
+dl product  [1, 2, 3, 4] [18, 17, 16, 15] 835016
+dl product  [1, 2, 3, 4] [19, 18, 17, 16] 0
+dl product  [2, 3, 4, 5] [3, 2, 1, 0] 5159640
+dl product  [2, 3, 4, 5] [4, 3, 2, 1] 951280
+dl product  [2, 3, 4, 5] [5, 4, 3, 2] 717952
+dl product  [2, 3, 4, 5] [6, 5, 4, 3] 2570400
+dl product  [2, 3, 4, 5] [7, 6, 5, 4] 2115927
+dl product  [2, 3, 4, 5] [8, 7, 6, 5] 738234
+dl product  [2, 3, 4, 5] [9, 8, 7, 6] 19620495
+dl product  [2, 3, 4, 5] [10, 9, 8, 7] 78720
+dl product  [2, 3, 4, 5] [11, 10, 9, 8] 18442688
+dl product  [2, 3, 4, 5] [12, 11, 10, 9] 8013600
+dl product  [2, 3, 4, 5] [13, 12, 11, 10] 156816
+dl product  [2, 3, 4, 5] [14, 13, 12, 11] 1119360
+dl product  [2, 3, 4, 5] [15, 14, 13, 12] 524160
+dl product  [2, 3, 4, 5] [16, 15, 14, 13] 5009760
+dl product  [2, 3, 4, 5] [17, 16, 15, 14] 1131312
+dl product  [2, 3, 4, 5] [18, 17, 16, 15] 95040
+dl product  [2, 3, 4, 5] [19, 18, 17, 16] 2702700
+dl product  [3, 4, 5, 6] [3, 2, 1, 0] 553472
+dl product  [3, 4, 5, 6] [4, 3, 2, 1] 890624
+dl product  [3, 4, 5, 6] [5, 4, 3, 2] 14871600
+dl product  [3, 4, 5, 6] [6, 5, 4, 3] 2042964
+dl product  [3, 4, 5, 6] [7, 6, 5, 4] 508032
+dl product  [3, 4, 5, 6] [8, 7, 6, 5] 6355935
+dl product  [3, 4, 5, 6] [9, 8, 7, 6] 131856
+dl product  [3, 4, 5, 6] [10, 9, 8, 7] 2752640
+dl product  [3, 4, 5, 6] [11, 10, 9, 8] 3931200
+dl product  [3, 4, 5, 6] [12, 11, 10, 9] 67716
+dl product  [3, 4, 5, 6] [13, 12, 11, 10] 1492480
+dl product  [3, 4, 5, 6] [14, 13, 12, 11] 11706240
+dl product  [3, 4, 5, 6] [15, 14, 13, 12] 6032160
+dl product  [3, 4, 5, 6] [16, 15, 14, 13] 4699296
+dl product  [3, 4, 5, 6] [17, 16, 15, 14] 184800
+dl product  [3, 4, 5, 6] [18, 17, 16, 15] 2744280
+dl product  [3, 4, 5, 6] [19, 18, 17, 16] 361998
+dl product  [4, 5, 6, 7] [3, 2, 1, 0] 14917952
+dl product  [4, 5, 6, 7] [4, 3, 2, 1] 6444360
+dl product  [4, 5, 6, 7] [5, 4, 3, 2] 3714480
+dl product  [4, 5, 6, 7] [6, 5, 4, 3] 822528
+dl product  [4, 5, 6, 7] [7, 6, 5, 4] 184230
+dl product  [4, 5, 6, 7] [8, 7, 6, 5] 340628
+dl product  [4, 5, 6, 7] [9, 8, 7, 6] 485760
+dl product  [4, 5, 6, 7] [10, 9, 8, 7] 1404000
+dl product  [4, 5, 6, 7] [11, 10, 9, 8] 6433020
+dl product  [4, 5, 6, 7] [12, 11, 10, 9] 2938320
+dl product  [4, 5, 6, 7] [13, 12, 11, 10] 19649760
+dl product  [4, 5, 6, 7] [14, 13, 12, 11] 3313440
+dl product  [4, 5, 6, 7] [15, 14, 13, 12] 8001504
+dl product  [4, 5, 6, 7] [16, 15, 14, 13] 739200
+dl product  [4, 5, 6, 7] [17, 16, 15, 14] 3049200
+dl product  [4, 5, 6, 7] [18, 17, 16, 15] 361998
+dl product  [4, 5, 6, 7] [19, 18, 17, 16] 2407680
+dl product  [5, 6, 7, 8] [3, 2, 1, 0] 3032640
+dl product  [5, 6, 7, 8] [4, 3, 2, 1] 3049200
+dl product  [5, 6, 7, 8] [5, 4, 3, 2] 757248
+dl product  [5, 6, 7, 8] [6, 5, 4, 3] 10350
+dl product  [5, 6, 7, 8] [7, 6, 5, 4] 548328
+dl product  [5, 6, 7, 8] [8, 7, 6, 5] 385440
+dl product  [5, 6, 7, 8] [9, 8, 7, 6] 3861000
+dl product  [5, 6, 7, 8] [10, 9, 8, 7] 3097380
+dl product  [5, 6, 7, 8] [11, 10, 9, 8] 12955320
+dl product  [5, 6, 7, 8] [12, 11, 10, 9] 8351148
+dl product  [5, 6, 7, 8] [13, 12, 11, 10] 6461208
+dl product  [5, 6, 7, 8] [14, 13, 12, 11] 22289904
+dl product  [5, 6, 7, 8] [15, 14, 13, 12] 1075200
+dl product  [5, 6, 7, 8] [16, 15, 14, 13] 7669200
+dl product  [5, 6, 7, 8] [17, 16, 15, 14] 389844
+dl product  [5, 6, 7, 8] [18, 17, 16, 15] 2648448
+dl product  [5, 6, 7, 8] [19, 18, 17, 16] 5331200
+dl product  [6, 7, 8, 9] [3, 2, 1, 0] 646800
+dl product  [6, 7, 8, 9] [4, 3, 2, 1] 9086976
+dl product  [6, 7, 8, 9] [5, 4, 3, 2] 5290
+dl product  [6, 7, 8, 9] [6, 5, 4, 3] 2467476
+dl product  [6, 7, 8, 9] [7, 6, 5, 4] 657000
+dl product  [6, 7, 8, 9] [8, 7, 6, 5] 0
+dl product  [6, 7, 8, 9] [9, 8, 7, 6] 7133360
+dl product  [6, 7, 8, 9] [10, 9, 8, 7] 10755360
+dl product  [6, 7, 8, 9] [11, 10, 9, 8] 2141320
+dl product  [6, 7, 8, 9] [12, 11, 10, 9] 8076510
+dl product  [6, 7, 8, 9] [13, 12, 11, 10] 9287460
+dl product  [6, 7, 8, 9] [14, 13, 12, 11] 752640
+dl product  [6, 7, 8, 9] [15, 14, 13, 12] 0
+dl product  [6, 7, 8, 9] [16, 15, 14, 13] 1398852
+dl product  [6, 7, 8, 9] [17, 16, 15, 14] 7283232
+dl product  [6, 7, 8, 9] [18, 17, 16, 15] 10342528
+dl product  [6, 7, 8, 9] [19, 18, 17, 16] 19911080
+dl product  [7, 8, 9, 10] [3, 2, 1, 0] 11074752
+dl product  [7, 8, 9, 10] [4, 3, 2, 1] 3910
+dl product  [7, 8, 9, 10] [5, 4, 3, 2] 1951884
+dl product  [7, 8, 9, 10] [6, 5, 4, 3] 1839600
+dl product  [7, 8, 9, 10] [7, 6, 5, 4] 0
+dl product  [7, 8, 9, 10] [8, 7, 6, 5] 14079000
+dl product  [7, 8, 9, 10] [9, 8, 7, 6] 8335404
+dl product  [7, 8, 9, 10] [10, 9, 8, 7] 2141320
+dl product  [7, 8, 9, 10] [11, 10, 9, 8] 2053350
+dl product  [7, 8, 9, 10] [12, 11, 10, 9] 16167060
+dl product  [7, 8, 9, 10] [13, 12, 11, 10] 32256
+dl product  [7, 8, 9, 10] [14, 13, 12, 11] 0
+dl product  [7, 8, 9, 10] [15, 14, 13, 12] 310856
+dl product  [7, 8, 9, 10] [16, 15, 14, 13] 11883168
+dl product  [7, 8, 9, 10] [17, 16, 15, 14] 2585632
+dl product  [7, 8, 9, 10] [18, 17, 16, 15] 3982216
+dl product  [7, 8, 9, 10] [19, 18, 17, 16] 369117
+dl product  [8, 9, 10, 11] [3, 2, 1, 0] 31280
+dl product  [8, 9, 10, 11] [4, 3, 2, 1] 1227798
+dl product  [8, 9, 10, 11] [5, 4, 3, 2] 766500
+dl product  [8, 9, 10, 11] [6, 5, 4, 3] 0
+dl product  [8, 9, 10, 11] [7, 6, 5, 4] 14227200
+dl product  [8, 9, 10, 11] [8, 7, 6, 5] 4630780
+dl product  [8, 9, 10, 11] [9, 8, 7, 6] 706180
+dl product  [8, 9, 10, 11] [10, 9, 8, 7] 2474550
+dl product  [8, 9, 10, 11] [11, 10, 9, 8] 14114100
+dl product  [8, 9, 10, 11] [12, 11, 10, 9] 233856
+dl product  [8, 9, 10, 11] [13, 12, 11, 10] 0
+dl product  [8, 9, 10, 11] [14, 13, 12, 11] 81984
+dl product  [8, 9, 10, 11] [15, 14, 13, 12] 0
+dl product  [8, 9, 10, 11] [16, 15, 14, 13] 897056
+dl product  [8, 9, 10, 11] [17, 16, 15, 14] 2287656
+dl product  [8, 9, 10, 11] [18, 17, 16, 15] 421848
+dl product  [8, 9, 10, 11] [19, 18, 17, 16] 4533408
+dl product  [9, 10, 11, 12] [3, 2, 1, 0] 1599858
+dl product  [9, 10, 11, 12] [4, 3, 2, 1] 588000
+dl product  [9, 10, 11, 12] [5, 4, 3, 2] 0
+dl product  [9, 10, 11, 12] [6, 5, 4, 3] 26265600
+dl product  [9, 10, 11, 12] [7, 6, 5, 4] 1670900
+dl product  [9, 10, 11, 12] [8, 7, 6, 5] 2949340
+dl product  [9, 10, 11, 12] [9, 8, 7, 6] 2823525
+dl product  [9, 10, 11, 12] [10, 9, 8, 7] 1266650
+dl product  [9, 10, 11, 12] [11, 10, 9, 8] 12180
+dl product  [9, 10, 11, 12] [12, 11, 10, 9] 0
+dl product  [9, 10, 11, 12] [13, 12, 11, 10] 257664
+dl product  [9, 10, 11, 12] [14, 13, 12, 11] 0
+dl product  [9, 10, 11, 12] [15, 14, 13, 12] 1160896
+dl product  [9, 10, 11, 12] [16, 15, 14, 13] 1542240
+dl product  [9, 10, 11, 12] [17, 16, 15, 14] 140616
+dl product  [9, 10, 11, 12] [18, 17, 16, 15] 3651912
+dl product  [9, 10, 11, 12] [19, 18, 17, 16] 7868280
+dl product  [10, 11, 12, 13] [3, 2, 1, 0] 148960
+dl product  [10, 11, 12, 13] [4, 3, 2, 1] 0
+dl product  [10, 11, 12, 13] [5, 4, 3, 2] 27993600
+dl product  [10, 11, 12, 13] [6, 5, 4, 3] 2582300
+dl product  [10, 11, 12, 13] [7, 6, 5, 4] 737335
+dl product  [10, 11, 12, 13] [8, 7, 6, 5] 5898030
+dl product  [10, 11, 12, 13] [9, 8, 7, 6] 1700930
+dl product  [10, 11, 12, 13] [10, 9, 8, 7] 60030
+dl product  [10, 11, 12, 13] [11, 10, 9, 8] 8673280
+dl product  [10, 11, 12, 13] [12, 11, 10, 9] 308352
+dl product  [10, 11, 12, 13] [13, 12, 11, 10] 0
+dl product  [10, 11, 12, 13] [14, 13, 12, 11] 155584
+dl product  [10, 11, 12, 13] [15, 14, 13, 12] 3900960
+dl product  [10, 11, 12, 13] [16, 15, 14, 13] 235872
+dl product  [10, 11, 12, 13] [17, 16, 15, 14] 1881288
+dl product  [10, 11, 12, 13] [18, 17, 16, 15] 6377448
+dl product  [10, 11, 12, 13] [19, 18, 17, 16] 1689120
+dl product  [11, 12, 13, 14] [3, 2, 1, 0] 0
+dl product  [11, 12, 13, 14] [4, 3, 2, 1] 19408896
+dl product  [11, 12, 13, 14] [5, 4, 3, 2] 666400
+dl product  [11, 12, 13, 14] [6, 5, 4, 3] 913415
+dl product  [11, 12, 13, 14] [7, 6, 5, 4] 38140594
+dl product  [11, 12, 13, 14] [8, 7, 6, 5] 633325
+dl product  [11, 12, 13, 14] [9, 8, 7, 6] 1980990
+dl product  [11, 12, 13, 14] [10, 9, 8, 7] 1734656
+dl product  [11, 12, 13, 14] [11, 10, 9, 8] 539616
+dl product  [11, 12, 13, 14] [12, 11, 10, 9] 0
+dl product  [11, 12, 13, 14] [13, 12, 11, 10] 554268
+dl product  [11, 12, 13, 14] [14, 13, 12, 11] 8916480
+dl product  [11, 12, 13, 14] [15, 14, 13, 12] 419328
+dl product  [11, 12, 13, 14] [16, 15, 14, 13] 922896
+dl product  [11, 12, 13, 14] [17, 16, 15, 14] 2960958
+dl product  [11, 12, 13, 14] [18, 17, 16, 15] 1450440
+dl product  [11, 12, 13, 14] [19, 18, 17, 16] 2845953
+dl product  [12, 13, 14, 15] [3, 2, 1, 0] 17791488
+dl product  [12, 13, 14, 15] [4, 3, 2, 1] 685440
+dl product  [12, 13, 14, 15] [5, 4, 3, 2] 2003620
+dl product  [12, 13, 14, 15] [6, 5, 4, 3] 70600674
+dl product  [12, 13, 14, 15] [7, 6, 5, 4] 656355
+dl product  [12, 13, 14, 15] [8, 7, 6, 5] 2117610
+dl product  [12, 13, 14, 15] [9, 8, 7, 6] 394240
+dl product  [12, 13, 14, 15] [10, 9, 8, 7] 1618848
+dl product  [12, 13, 14, 15] [11, 10, 9, 8] 990564
+dl product  [12, 13, 14, 15] [12, 11, 10, 9] 1499784
+dl product  [12, 13, 14, 15] [13, 12, 11, 10] 5448960
+dl product  [12, 13, 14, 15] [14, 13, 12, 11] 1170624
+dl product  [12, 13, 14, 15] [15, 14, 13, 12] 1179256
+dl product  [12, 13, 14, 15] [16, 15, 14, 13] 5615610
+dl product  [12, 13, 14, 15] [17, 16, 15, 14] 204768
+dl product  [12, 13, 14, 15] [18, 17, 16, 15] 1597728
+dl product  [12, 13, 14, 15] [19, 18, 17, 16] 5426190
+dl product  [13, 14, 15, 16] [3, 2, 1, 0] 78336
+dl product  [13, 14, 15, 16] [4, 3, 2, 1] 1185240
+dl product  [13, 14, 15, 16] [5, 4, 3, 2] 12692256
+dl product  [13, 14, 15, 16] [6, 5, 4, 3] 6844845
+dl product  [13, 14, 15, 16] [7, 6, 5, 4] 16093836
+dl product  [13, 14, 15, 16] [8, 7, 6, 5] 224000
+dl product  [13, 14, 15, 16] [9, 8, 7, 6] 1434888
+dl product  [13, 14, 15, 16] [10, 9, 8, 7] 294492
+dl product  [13, 14, 15, 16] [11, 10, 9, 8] 818064
+dl product  [13, 14, 15, 16] [12, 11, 10, 9] 8536704
+dl product  [13, 14, 15, 16] [13, 12, 11, 10] 4013568
+dl product  [13, 14, 15, 16] [14, 13, 12, 11] 365976
+dl product  [13, 14, 15, 16] [15, 14, 13, 12] 880880
+dl product  [13, 14, 15, 16] [16, 15, 14, 13] 174432
+dl product  [13, 14, 15, 16] [17, 16, 15, 14] 2725536
+dl product  [13, 14, 15, 16] [18, 17, 16, 15] 2993760
+dl product  [13, 14, 15, 16] [19, 18, 17, 16] 14582400
+dl product  [14, 15, 16, 17] [3, 2, 1, 0] 4740960
+dl product  [14, 15, 16, 17] [4, 3, 2, 1] 9316656
+dl product  [14, 15, 16, 17] [5, 4, 3, 2] 5242860
+dl product  [14, 15, 16, 17] [6, 5, 4, 3] 9563004
+dl product  [14, 15, 16, 17] [7, 6, 5, 4] 576000
+dl product  [14, 15, 16, 17] [8, 7, 6, 5] 589680
+dl product  [14, 15, 16, 17] [9, 8, 7, 6] 73623
+dl product  [14, 15, 16, 17] [10, 9, 8, 7] 5537664
+dl product  [14, 15, 16, 17] [11, 10, 9, 8] 3374976
+dl product  [14, 15, 16, 17] [12, 11, 10, 9] 4785408
+dl product  [14, 15, 16, 17] [13, 12, 11, 10] 2131272
+dl product  [14, 15, 16, 17] [14, 13, 12, 11] 789360
+dl product  [14, 15, 16, 17] [15, 14, 13, 12] 3575856
+dl product  [14, 15, 16, 17] [16, 15, 14, 13] 2051808
+dl product  [14, 15, 16, 17] [17, 16, 15, 14] 3211488
+dl product  [14, 15, 16, 17] [18, 17, 16, 15] 30987600
+dl product  [14, 15, 16, 17] [19, 18, 17, 16] 16048824
+dl product  [15, 16, 17, 18] [3, 2, 1, 0] 1920960
+dl product  [15, 16, 17, 18] [4, 3, 2, 1] 10935108
+dl product  [15, 16, 17, 18] [5, 4, 3, 2] 3380860
+dl product  [15, 16, 17, 18] [6, 5, 4, 3] 1044000
+dl product  [15, 16, 17, 18] [7, 6, 5, 4] 6570720
+dl product  [15, 16, 17, 18] [8, 7, 6, 5] 23529
+dl product  [15, 16, 17, 18] [9, 8, 7, 6] 8743680
+dl product  [15, 16, 17, 18] [10, 9, 8, 7] 105468
+dl product  [15, 16, 17, 18] [11, 10, 9, 8] 22132512
+dl product  [15, 16, 17, 18] [12, 11, 10, 9] 2541132
+dl product  [15, 16, 17, 18] [13, 12, 11, 10] 1487640
+dl product  [15, 16, 17, 18] [14, 13, 12, 11] 3213744
+dl product  [15, 16, 17, 18] [15, 14, 13, 12] 2984448
+dl product  [15, 16, 17, 18] [16, 15, 14, 13] 10229184
+dl product  [15, 16, 17, 18] [17, 16, 15, 14] 25612200
+dl product  [15, 16, 17, 18] [18, 17, 16, 15] 3890624
+dl product  [15, 16, 17, 18] [19, 18, 17, 16] 482448
+dl product  [16, 17, 18, 19] [3, 2, 1, 0] 191844
+dl product  [16, 17, 18, 19] [4, 3, 2, 1] 3817100
+dl product  [16, 17, 18, 19] [5, 4, 3, 2] 2818800
+dl product  [16, 17, 18, 19] [6, 5, 4, 3] 6479460
+dl product  [16, 17, 18, 19] [7, 6, 5, 4] 650969
+dl product  [16, 17, 18, 19] [8, 7, 6, 5] 9694080
+dl product  [16, 17, 18, 19] [9, 8, 7, 6] 172584
+dl product  [16, 17, 18, 19] [10, 9, 8, 7] 22793184
+dl product  [16, 17, 18, 19] [11, 10, 9, 8] 883872
+dl product  [16, 17, 18, 19] [12, 11, 10, 9] 2488416
+dl product  [16, 17, 18, 19] [13, 12, 11, 10] 8837796
+dl product  [16, 17, 18, 19] [14, 13, 12, 11] 4476672
+dl product  [16, 17, 18, 19] [15, 14, 13, 12] 9904448
+dl product  [16, 17, 18, 19] [16, 15, 14, 13] 11842200
+dl product  [16, 17, 18, 19] [17, 16, 15, 14] 3817216
+dl product  [16, 17, 18, 19] [18, 17, 16, 15] 6992
+dl product  [16, 17, 18, 19] [19, 18, 17, 16] 6574608
+ur  product  [0, 1, 2, 3] [0, 1, 2, 3] 279496
+ur  product  [0, 1, 2, 3] [1, 2, 3, 4] 57816
+ur  product  [0, 1, 2, 3] [2, 3, 4, 5] 2904000
+ur  product  [0, 1, 2, 3] [3, 4, 5, 6] 1432981
+ur  product  [0, 1, 2, 3] [4, 5, 6, 7] 1809864
+ur  product  [0, 1, 2, 3] [5, 6, 7, 8] 540270
+ur  product  [0, 1, 2, 3] [6, 7, 8, 9] 0
+ur  product  [0, 1, 2, 3] [7, 8, 9, 10] 11587200
+ur  product  [0, 1, 2, 3] [8, 9, 10, 11] 0
+ur  product  [0, 1, 2, 3] [9, 10, 11, 12] 85425
+ur  product  [0, 1, 2, 3] [10, 11, 12, 13] 271360
+ur  product  [0, 1, 2, 3] [11, 12, 13, 14] 2414720
+ur  product  [0, 1, 2, 3] [12, 13, 14, 15] 641130
+ur  product  [0, 1, 2, 3] [13, 14, 15, 16] 597402
+ur  product  [0, 1, 2, 3] [14, 15, 16, 17] 244608
+ur  product  [0, 1, 2, 3] [15, 16, 17, 18] 22464
+ur  product  [0, 1, 2, 3] [16, 17, 18, 19] 9172800
+ur  product  [1, 2, 3, 4] [0, 1, 2, 3] 16194745
+ur  product  [1, 2, 3, 4] [1, 2, 3, 4] 1781787
+ur  product  [1, 2, 3, 4] [2, 3, 4, 5] 1936836
+ur  product  [1, 2, 3, 4] [3, 4, 5, 6] 8316000
+ur  product  [1, 2, 3, 4] [4, 5, 6, 7] 1314797
+ur  product  [1, 2, 3, 4] [5, 6, 7, 8] 1952748
+ur  product  [1, 2, 3, 4] [6, 7, 8, 9] 3313656
+ur  product  [1, 2, 3, 4] [7, 8, 9, 10] 4580064
+ur  product  [1, 2, 3, 4] [8, 9, 10, 11] 15642720
+ur  product  [1, 2, 3, 4] [9, 10, 11, 12] 4287360
+ur  product  [1, 2, 3, 4] [10, 11, 12, 13] 45560
+ur  product  [1, 2, 3, 4] [11, 12, 13, 14] 2713600
+ur  product  [1, 2, 3, 4] [12, 13, 14, 15] 13522432
+ur  product  [1, 2, 3, 4] [13, 14, 15, 16] 6044940
+ur  product  [1, 2, 3, 4] [14, 15, 16, 17] 252747
+ur  product  [1, 2, 3, 4] [15, 16, 17, 18] 61152
+ur  product  [1, 2, 3, 4] [16, 17, 18, 19] 149760
+ur  product  [2, 3, 4, 5] [0, 1, 2, 3] 5443200
+ur  product  [2, 3, 4, 5] [1, 2, 3, 4] 32719995
+ur  product  [2, 3, 4, 5] [2, 3, 4, 5] 109089
+ur  product  [2, 3, 4, 5] [3, 4, 5, 6] 880380
+ur  product  [2, 3, 4, 5] [4, 5, 6, 7] 415800
+ur  product  [2, 3, 4, 5] [5, 6, 7, 8] 3403004
+ur  product  [2, 3, 4, 5] [6, 7, 8, 9] 1808100
+ur  product  [2, 3, 4, 5] [7, 8, 9, 10] 6075036
+ur  product  [2, 3, 4, 5] [8, 9, 10, 11] 4258656
+ur  product  [2, 3, 4, 5] [9, 10, 11, 12] 20335536
+ur  product  [2, 3, 4, 5] [10, 11, 12, 13] 1774080
+ur  product  [2, 3, 4, 5] [11, 12, 13, 14] 225120
+ur  product  [2, 3, 4, 5] [12, 13, 14, 15] 1356800
+ur  product  [2, 3, 4, 5] [13, 14, 15, 16] 4829440
+ur  product  [2, 3, 4, 5] [14, 15, 16, 17] 2389860
+ur  product  [2, 3, 4, 5] [15, 16, 17, 18] 43956
+ur  product  [2, 3, 4, 5] [16, 17, 18, 19] 63700
+ur  product  [3, 4, 5, 6] [0, 1, 2, 3] 1444352
+ur  product  [3, 4, 5, 6] [1, 2, 3, 4] 4300800
+ur  product  [3, 4, 5, 6] [2, 3, 4, 5] 15358365
+ur  product  [3, 4, 5, 6] [3, 4, 5, 6] 235773
+ur  product  [3, 4, 5, 6] [4, 5, 6, 7] 120600
+ur  product  [3, 4, 5, 6] [5, 6, 7, 8] 196560
+ur  product  [3, 4, 5, 6] [6, 7, 8, 9] 1636888
+ur  product  [3, 4, 5, 6] [7, 8, 9, 10] 5166000
+ur  product  [3, 4, 5, 6] [8, 9, 10, 11] 14035428
+ur  product  [3, 4, 5, 6] [9, 10, 11, 12] 2701728
+ur  product  [3, 4, 5, 6] [10, 11, 12, 13] 15466464
+ur  product  [3, 4, 5, 6] [11, 12, 13, 14] 3104640
+ur  product  [3, 4, 5, 6] [12, 13, 14, 15] 221760
+ur  product  [3, 4, 5, 6] [13, 14, 15, 16] 460800
+ur  product  [3, 4, 5, 6] [14, 15, 16, 17] 2085440
+ur  product  [3, 4, 5, 6] [15, 16, 17, 18] 5098368
+ur  product  [3, 4, 5, 6] [16, 17, 18, 19] 1025640
+ur  product  [4, 5, 6, 7] [0, 1, 2, 3] 5695272
+ur  product  [4, 5, 6, 7] [1, 2, 3, 4] 55552
+ur  product  [4, 5, 6, 7] [2, 3, 4, 5] 3809280
+ur  product  [4, 5, 6, 7] [3, 4, 5, 6] 1940004
+ur  product  [4, 5, 6, 7] [4, 5, 6, 7] 205020
+ur  product  [4, 5, 6, 7] [5, 6, 7, 8] 2864250
+ur  product  [4, 5, 6, 7] [6, 7, 8, 9] 206388
+ur  product  [4, 5, 6, 7] [7, 8, 9, 10] 13987952
+ur  product  [4, 5, 6, 7] [8, 9, 10, 11] 4797000
+ur  product  [4, 5, 6, 7] [9, 10, 11, 12] 12814956
+ur  product  [4, 5, 6, 7] [10, 11, 12, 13] 900576
+ur  product  [4, 5, 6, 7] [11, 12, 13, 14] 9097920
+ur  product  [4, 5, 6, 7] [12, 13, 14, 15] 5045040
+ur  product  [4, 5, 6, 7] [13, 14, 15, 16] 14636160
+ur  product  [4, 5, 6, 7] [14, 15, 16, 17] 705600
+ur  product  [4, 5, 6, 7] [15, 16, 17, 18] 3500560
+ur  product  [4, 5, 6, 7] [16, 17, 18, 19] 1507968
+ur  product  [5, 6, 7, 8] [0, 1, 2, 3] 235200
+ur  product  [5, 6, 7, 8] [1, 2, 3, 4] 17085816
+ur  product  [5, 6, 7, 8] [2, 3, 4, 5] 130816
+ur  product  [5, 6, 7, 8] [3, 4, 5, 6] 23569920
+ur  product  [5, 6, 7, 8] [4, 5, 6, 7] 710424
+ur  product  [5, 6, 7, 8] [5, 6, 7, 8] 389940
+ur  product  [5, 6, 7, 8] [6, 7, 8, 9] 726750
+ur  product  [5, 6, 7, 8] [7, 8, 9, 10] 255528
+ur  product  [5, 6, 7, 8] [8, 9, 10, 11] 12259104
+ur  product  [5, 6, 7, 8] [9, 10, 11, 12] 11232000
+ur  product  [5, 6, 7, 8] [10, 11, 12, 13] 11561319
+ur  product  [5, 6, 7, 8] [11, 12, 13, 14] 350224
+ur  product  [5, 6, 7, 8] [12, 13, 14, 15] 14826240
+ur  product  [5, 6, 7, 8] [13, 14, 15, 16] 7796880
+ur  product  [5, 6, 7, 8] [14, 15, 16, 17] 32565456
+ur  product  [5, 6, 7, 8] [15, 16, 17, 18] 1111320
+ur  product  [5, 6, 7, 8] [16, 17, 18, 19] 9001440
+ur  product  [6, 7, 8, 9] [0, 1, 2, 3] 434304
+ur  product  [6, 7, 8, 9] [1, 2, 3, 4] 735000
+ur  product  [6, 7, 8, 9] [2, 3, 4, 5] 0
+ur  product  [6, 7, 8, 9] [3, 4, 5, 6] 310688
+ur  product  [6, 7, 8, 9] [4, 5, 6, 7] 17284608
+ur  product  [6, 7, 8, 9] [5, 6, 7, 8] 143520
+ur  product  [6, 7, 8, 9] [6, 7, 8, 9] 5849100
+ur  product  [6, 7, 8, 9] [7, 8, 9, 10] 565250
+ur  product  [6, 7, 8, 9] [8, 9, 10, 11] 1788696
+ur  product  [6, 7, 8, 9] [9, 10, 11, 12] 0
+ur  product  [6, 7, 8, 9] [10, 11, 12, 13] 9135360
+ur  product  [6, 7, 8, 9] [11, 12, 13, 14] 11561319
+ur  product  [6, 7, 8, 9] [12, 13, 14, 15] 640976
+ur  product  [6, 7, 8, 9] [13, 14, 15, 16] 6462720
+ur  product  [6, 7, 8, 9] [14, 15, 16, 17] 6713980
+ur  product  [6, 7, 8, 9] [15, 16, 17, 18] 12793572
+ur  product  [6, 7, 8, 9] [16, 17, 18, 19] 5278770
+ur  product  [7, 8, 9, 10] [0, 1, 2, 3] 2373140
+ur  product  [7, 8, 9, 10] [1, 2, 3, 4] 298584
+ur  product  [7, 8, 9, 10] [2, 3, 4, 5] 562500
+ur  product  [7, 8, 9, 10] [3, 4, 5, 6] 0
+ur  product  [7, 8, 9, 10] [4, 5, 6, 7] 743432
+ur  product  [7, 8, 9, 10] [5, 6, 7, 8] 4051080
+ur  product  [7, 8, 9, 10] [6, 7, 8, 9] 586560
+ur  product  [7, 8, 9, 10] [7, 8, 9, 10] 261900
+ur  product  [7, 8, 9, 10] [8, 9, 10, 11] 4522000
+ur  product  [7, 8, 9, 10] [9, 10, 11, 12] 275184
+ur  product  [7, 8, 9, 10] [10, 11, 12, 13] 0
+ur  product  [7, 8, 9, 10] [11, 12, 13, 14] 3654144
+ur  product  [7, 8, 9, 10] [12, 13, 14, 15] 2415798
+ur  product  [7, 8, 9, 10] [13, 14, 15, 16] 97776
+ur  product  [7, 8, 9, 10] [14, 15, 16, 17] 6343040
+ur  product  [7, 8, 9, 10] [15, 16, 17, 18] 5371184
+ur  product  [7, 8, 9, 10] [16, 17, 18, 19] 17833464
+ur  product  [8, 9, 10, 11] [0, 1, 2, 3] 1923264
+ur  product  [8, 9, 10, 11] [1, 2, 3, 4] 3400320
+ur  product  [8, 9, 10, 11] [2, 3, 4, 5] 401940
+ur  product  [8, 9, 10, 11] [3, 4, 5, 6] 871875
+ur  product  [8, 9, 10, 11] [4, 5, 6, 7] 0
+ur  product  [8, 9, 10, 11] [5, 6, 7, 8] 20444380
+ur  product  [8, 9, 10, 11] [6, 7, 8, 9] 3789720
+ur  product  [8, 9, 10, 11] [7, 8, 9, 10] 4301440
+ur  product  [8, 9, 10, 11] [8, 9, 10, 11] 314280
+ur  product  [8, 9, 10, 11] [9, 10, 11, 12] 0
+ur  product  [8, 9, 10, 11] [10, 11, 12, 13] 74256
+ur  product  [8, 9, 10, 11] [11, 12, 13, 14] 0
+ur  product  [8, 9, 10, 11] [12, 13, 14, 15] 2248704
+ur  product  [8, 9, 10, 11] [13, 14, 15, 16] 1380456
+ur  product  [8, 9, 10, 11] [14, 15, 16, 17] 354438
+ur  product  [8, 9, 10, 11] [15, 16, 17, 18] 13478960
+ur  product  [8, 9, 10, 11] [16, 17, 18, 19] 3364368
+ur  product  [9, 10, 11, 12] [0, 1, 2, 3] 85680
+ur  product  [9, 10, 11, 12] [1, 2, 3, 4] 2804760
+ur  product  [9, 10, 11, 12] [2, 3, 4, 5] 4389504
+ur  product  [9, 10, 11, 12] [3, 4, 5, 6] 616770
+ur  product  [9, 10, 11, 12] [4, 5, 6, 7] 1220625
+ur  product  [9, 10, 11, 12] [5, 6, 7, 8] 0
+ur  product  [9, 10, 11, 12] [6, 7, 8, 9] 12322640
+ur  product  [9, 10, 11, 12] [7, 8, 9, 10] 1684320
+ur  product  [9, 10, 11, 12] [8, 9, 10, 11] 6121280
+ur  product  [9, 10, 11, 12] [9, 10, 11, 12] 142560
+ur  product  [9, 10, 11, 12] [10, 11, 12, 13] 0
+ur  product  [9, 10, 11, 12] [11, 12, 13, 14] 19992
+ur  product  [9, 10, 11, 12] [12, 13, 14, 15] 0
+ur  product  [9, 10, 11, 12] [13, 14, 15, 16] 1194624
+ur  product  [9, 10, 11, 12] [14, 15, 16, 17] 898128
+ur  product  [9, 10, 11, 12] [15, 16, 17, 18] 430389
+ur  product  [9, 10, 11, 12] [16, 17, 18, 19] 8883860
+ur  product  [10, 11, 12, 13] [0, 1, 2, 3] 0
+ur  product  [10, 11, 12, 13] [1, 2, 3, 4] 20400
+ur  product  [10, 11, 12, 13] [2, 3, 4, 5] 7323540
+ur  product  [10, 11, 12, 13] [3, 4, 5, 6] 8969856
+ur  product  [10, 11, 12, 13] [4, 5, 6, 7] 4728570
+ur  product  [10, 11, 12, 13] [5, 6, 7, 8] 455700
+ur  product  [10, 11, 12, 13] [6, 7, 8, 9] 531805
+ur  product  [10, 11, 12, 13] [7, 8, 9, 10] 14916880
+ur  product  [10, 11, 12, 13] [8, 9, 10, 11] 497640
+ur  product  [10, 11, 12, 13] [9, 10, 11, 12] 26321504
+ur  product  [10, 11, 12, 13] [10, 11, 12, 13] 164736
+ur  product  [10, 11, 12, 13] [11, 12, 13, 14] 0
+ur  product  [10, 11, 12, 13] [12, 13, 14, 15] 109956
+ur  product  [10, 11, 12, 13] [13, 14, 15, 16] 776736
+ur  product  [10, 11, 12, 13] [14, 15, 16, 17] 1742976
+ur  product  [10, 11, 12, 13] [15, 16, 17, 18] 1496880
+ur  product  [10, 11, 12, 13] [16, 17, 18, 19] 177480
+ur  product  [11, 12, 13, 14] [0, 1, 2, 3] 6023808
+ur  product  [11, 12, 13, 14] [1, 2, 3, 4] 0
+ur  product  [11, 12, 13, 14] [2, 3, 4, 5] 42000
+ur  product  [11, 12, 13, 14] [3, 4, 5, 6] 13679820
+ur  product  [11, 12, 13, 14] [4, 5, 6, 7] 5125632
+ur  product  [11, 12, 13, 14] [5, 6, 7, 8] 1504545
+ur  product  [11, 12, 13, 14] [6, 7, 8, 9] 589372
+ur  product  [11, 12, 13, 14] [7, 8, 9, 10] 977835
+ur  product  [11, 12, 13, 14] [8, 9, 10, 11] 7124480
+ur  product  [11, 12, 13, 14] [9, 10, 11, 12] 530816
+ur  product  [11, 12, 13, 14] [10, 11, 12, 13] 7280416
+ur  product  [11, 12, 13, 14] [11, 12, 13, 14] 1427712
+ur  product  [11, 12, 13, 14] [12, 13, 14, 15] 0
+ur  product  [11, 12, 13, 14] [13, 14, 15, 16] 907137
+ur  product  [11, 12, 13, 14] [14, 15, 16, 17] 338256
+ur  product  [11, 12, 13, 14] [15, 16, 17, 18] 10675728
+ur  product  [11, 12, 13, 14] [16, 17, 18, 19] 7056720
+ur  product  [12, 13, 14, 15] [0, 1, 2, 3] 4788480
+ur  product  [12, 13, 14, 15] [1, 2, 3, 4] 21459816
+ur  product  [12, 13, 14, 15] [2, 3, 4, 5] 0
+ur  product  [12, 13, 14, 15] [3, 4, 5, 6] 168000
+ur  product  [12, 13, 14, 15] [4, 5, 6, 7] 23451120
+ur  product  [12, 13, 14, 15] [5, 6, 7, 8] 160176
+ur  product  [12, 13, 14, 15] [6, 7, 8, 9] 1977402
+ur  product  [12, 13, 14, 15] [7, 8, 9, 10] 627396
+ur  product  [12, 13, 14, 15] [8, 9, 10, 11] 1393935
+ur  product  [12, 13, 14, 15] [9, 10, 11, 12] 5958656
+ur  product  [12, 13, 14, 15] [10, 11, 12, 13] 503360
+ur  product  [12, 13, 14, 15] [11, 12, 13, 14] 992784
+ur  product  [12, 13, 14, 15] [12, 13, 14, 15] 1903616
+ur  product  [12, 13, 14, 15] [13, 14, 15, 16] 5076540
+ur  product  [12, 13, 14, 15] [14, 15, 16, 17] 4962573
+ur  product  [12, 13, 14, 15] [15, 16, 17, 18] 331992
+ur  product  [12, 13, 14, 15] [16, 17, 18, 19] 30692718
+ur  product  [13, 14, 15, 16] [0, 1, 2, 3] 4904432
+ur  product  [13, 14, 15, 16] [1, 2, 3, 4] 2115840
+ur  product  [13, 14, 15, 16] [2, 3, 4, 5] 9580275
+ur  product  [13, 14, 15, 16] [3, 4, 5, 6] 15949128
+ur  product  [13, 14, 15, 16] [4, 5, 6, 7] 38500
+ur  product  [13, 14, 15, 16] [5, 6, 7, 8] 16080768
+ur  product  [13, 14, 15, 16] [6, 7, 8, 9] 212064
+ur  product  [13, 14, 15, 16] [7, 8, 9, 10] 1599696
+ur  product  [13, 14, 15, 16] [8, 9, 10, 11] 1613304
+ur  product  [13, 14, 15, 16] [9, 10, 11, 12] 2230296
+ur  product  [13, 14, 15, 16] [10, 11, 12, 13] 6229504
+ur  product  [13, 14, 15, 16] [11, 12, 13, 14] 331760
+ur  product  [13, 14, 15, 16] [12, 13, 14, 15] 858624
+ur  product  [13, 14, 15, 16] [13, 14, 15, 16] 1730560
+ur  product  [13, 14, 15, 16] [14, 15, 16, 17] 5245758
+ur  product  [13, 14, 15, 16] [15, 16, 17, 18] 17959788
+ur  product  [13, 14, 15, 16] [16, 17, 18, 19] 206064
+ur  product  [14, 15, 16, 17] [0, 1, 2, 3] 94464
+ur  product  [14, 15, 16, 17] [1, 2, 3, 4] 18585216
+ur  product  [14, 15, 16, 17] [2, 3, 4, 5] 793440
+ur  product  [14, 15, 16, 17] [3, 4, 5, 6] 2720325
+ur  product  [14, 15, 16, 17] [4, 5, 6, 7] 20640048
+ur  product  [14, 15, 16, 17] [5, 6, 7, 8] 261800
+ur  product  [14, 15, 16, 17] [6, 7, 8, 9] 10606464
+ur  product  [14, 15, 16, 17] [7, 8, 9, 10] 446688
+ur  product  [14, 15, 16, 17] [8, 9, 10, 11] 1599696
+ur  product  [14, 15, 16, 17] [9, 10, 11, 12] 4724676
+ur  product  [14, 15, 16, 17] [10, 11, 12, 13] 2046984
+ur  product  [14, 15, 16, 17] [11, 12, 13, 14] 3995008
+ur  product  [14, 15, 16, 17] [12, 13, 14, 15] 2169200
+ur  product  [14, 15, 16, 17] [13, 14, 15, 16] 738816
+ur  product  [14, 15, 16, 17] [14, 15, 16, 17] 133120
+ur  product  [14, 15, 16, 17] [15, 16, 17, 18] 11108664
+ur  product  [14, 15, 16, 17] [16, 17, 18, 19] 3731904
+ur  product  [15, 16, 17, 18] [0, 1, 2, 3] 3858624
+ur  product  [15, 16, 17, 18] [1, 2, 3, 4] 1842048
+ur  product  [15, 16, 17, 18] [2, 3, 4, 5] 11079648
+ur  product  [15, 16, 17, 18] [3, 4, 5, 6] 8926200
+ur  product  [15, 16, 17, 18] [4, 5, 6, 7] 32775
+ur  product  [15, 16, 17, 18] [5, 6, 7, 8] 15746016
+ur  product  [15, 16, 17, 18] [6, 7, 8, 9] 231880
+ur  product  [15, 16, 17, 18] [7, 8, 9, 10] 5249664
+ur  product  [15, 16, 17, 18] [8, 9, 10, 11] 1982178
+ur  product  [15, 16, 17, 18] [9, 10, 11, 12] 10969344
+ur  product  [15, 16, 17, 18] [10, 11, 12, 13] 4188888
+ur  product  [15, 16, 17, 18] [11, 12, 13, 14] 2908872
+ur  product  [15, 16, 17, 18] [12, 13, 14, 15] 1997504
+ur  product  [15, 16, 17, 18] [13, 14, 15, 16] 3118225
+ur  product  [15, 16, 17, 18] [14, 15, 16, 17] 1619712
+ur  product  [15, 16, 17, 18] [15, 16, 17, 18] 25600
+ur  product  [15, 16, 17, 18] [16, 17, 18, 19] 7593264
+ur  product  [16, 17, 18, 19] [0, 1, 2, 3] 685860
+ur  product  [16, 17, 18, 19] [1, 2, 3, 4] 3639384
+ur  product  [16, 17, 18, 19] [2, 3, 4, 5] 2609568
+ur  product  [16, 17, 18, 19] [3, 4, 5, 6] 8798544
+ur  product  [16, 17, 18, 19] [4, 5, 6, 7] 7079400
+ur  product  [16, 17, 18, 19] [5, 6, 7, 8] 9200
+ur  product  [16, 17, 18, 19] [6, 7, 8, 9] 23365056
+ur  product  [16, 17, 18, 19] [7, 8, 9, 10] 382602
+ur  product  [16, 17, 18, 19] [8, 9, 10, 11] 3499776
+ur  product  [16, 17, 18, 19] [9, 10, 11, 12] 40304286
+ur  product  [16, 17, 18, 19] [10, 11, 12, 13] 10253952
+ur  product  [16, 17, 18, 19] [11, 12, 13, 14] 6600672
+ur  product  [16, 17, 18, 19] [12, 13, 14, 15] 43416
+ur  product  [16, 17, 18, 19] [13, 14, 15, 16] 3864736
+ur  product  [16, 17, 18, 19] [14, 15, 16, 17] 1077205
+ur  product  [16, 17, 18, 19] [15, 16, 17, 18] 9043392
+ur  product  [16, 17, 18, 19] [16, 17, 18, 19] 38400
+1068287616
