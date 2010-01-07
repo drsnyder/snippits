@@ -2,7 +2,10 @@
 #lang scheme/base
 (require scheme/cmdline)
 
-(define countdown                                                                                                     (lambda (n)                                                                                                           (cond                                                                                                                 ((zero? n) 'done)                                                                                                   (else (countdown (sub1 n))))))
+(define countdown 
+  (lambda (n)  
+    (cond ((zero? n) 'done) 
+          (else (countdown (sub1 n))))))
 
 
 (define count (make-parameter 0))
@@ -22,7 +25,7 @@
 
 (fprintf (current-output-port) "~a ~a.~n" (count) (threads))
 
-(for ([i (in-range (string->number (threads)))])
-     (display (thread (lambda () (countdown count)))))
-
+; (define result  (for ([i (in-range (string->number (threads)))])
+;       (thread (lambda () (countdown count)))))
+(map thread-wait (build-list (string->number (threads)) (thread (lambda (x) (countdown count)))))
 
