@@ -3,11 +3,13 @@
 (require scheme/cmdline)
 (require scheme/list)
 
+(define countdown 
+  (lambda (n)  
+    (cond ((zero? n) 'done) 
+          (else (countdown (sub1 n))))))
 (define usage 
   (lambda ()
     (fprintf (current-output-port) "usage: ~a -c <num> -t <threads>~n" (find-system-path 'run-file))))
-
-(define countdown                                                                                                     (lambda (n)                                                                                                           (cond                                                                                                                 ((zero? n) 'done)                                                                                                   (else (countdown (sub1 n))))))
 
 (define ccount (make-parameter 0))
 (define threads (make-parameter 0))
@@ -20,8 +22,16 @@
          [("-t" "--times") t "Number of threads to create"
                                                (threads t)]
          ))
-          ; #:args
-          ;   (filename) filename))
+;           #:args
+;             (filename) filename))
+
+
+(fprintf (current-output-port) "~a ~a.~n" (count) (threads))
+
+; (define result  (for ([i (in-range (string->number (threads)))])
+;       (thread (lambda () (countdown count)))))
+(map thread-wait (build-list (string->number (threads)) (thread (lambda (x) (countdown count)))))
+
 
 ; (if (or (= (string->number (ccount)) 0) (= (string->number (threads)) 0))
 ;   (usage)
