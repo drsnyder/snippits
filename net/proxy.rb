@@ -39,6 +39,7 @@ opts.parse!(ARGV)
 
 def read_response(s)
     data = ""
+    header = Hash.new()
     loop do 
         begin
             chunk = s.read_nonblock(1024)
@@ -48,7 +49,25 @@ def read_response(s)
         rescue EOFError
             break
         end
+
+        if data == ""
+            headersection = chunk.split("\r\n\r\n")[0]
+            headerlines = headersection.split("\r\n")
+            # skip the request type/spec line
+            headerlines[1..headerlines.length - 1].each do |line|
+                key, value = line.split(': ')
+                header[key] = value
+            end
+            p header
+        end
+
         data += chunk
+        if m = /Content-Length: (\d+)/i.match(chunk)
+            printf ">>> Content-Lenght specified at %d\n", m[1]
+        end
+        if /Transfer-Encoding: chunked/i.match(chunk)
+            printf ">>> Chunked encoding specified: '%s'\n", chunk
+        end
         break if /\r\n\r\n\Z/m.match(chunk)
     end 
 
@@ -79,8 +98,16 @@ while true do
     uri = URI.parse(url)
 
 
+    # look it using the host header value
     printf ">> client request %s\n", request_lines[0]
-    server = TCPSocket.new(uri.host, uri.port)
+    begin 
+        server = TCPSocket.new(uri.host, uri.port)
+    rescue SocketError => error
+        printf ">>>> Error %s: %s\n", error, request_lines.join("\n>>>>")
+        printf ">>>> Skipping \n"
+        client.close
+        next  
+    end
     printf ">> connecting to %s:%d\n", uri.host, uri.port
     re = %r{^(\w+) http://#{uri.host}(/?.*?) (HTTP.*)$}
     fields = re.match(request_lines[0])
