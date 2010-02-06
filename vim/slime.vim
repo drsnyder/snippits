@@ -1,5 +1,7 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Originally from
+"" http://technotales.wordpress.com/2007/10/03/like-slime-for-vim/
 
 function Send_to_Screen(text)
   if !exists("g:screen_sessionname") || !exists("g:screen_windowname")
