@@ -34,9 +34,24 @@
 (define (double x) (+ x x))
 (define (halve x) (/ x 2))
 
-(define (fast* a b)
-  (cond
-    ((= b 0) 0)
-    ((even? b) (+ (double (fast* a (halve b)))))
-    (else (+ a (fast* a (- b 1))))))
+(define (f* a b)
+    (define (fast* a b)
+      (cond
+        ((= b 0) 0)
+        ((even? b) (+ (double (fast* a (halve b)))))
+        (else (+ a (fast* a (- b 1))))))
+    (if (< a b)
+      (fast* b a)
+      (fast* a b)))
 
+(define (fi* a b)
+    (define (fast-iter* a b)
+      (cond
+        ((= b 1) a)
+        ((even? b) (fast-iter* (double a)
+                               (halve b)))
+        (else (+ a (fast-iter* (double a)
+                               (halve (- b 1)))))))
+    (if (< a b)
+      (fast-iter* b a)
+      (fast-iter* a b)))
