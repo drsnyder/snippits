@@ -68,7 +68,6 @@ def read_response(s)
                     printf ">>> Chunk length is %d\n", response_length
                 else
                     printf "*** Error, the length for the chunked encoding falied to parse\n"
-                    p body
                 end
 
             end

@@ -18,6 +18,18 @@
                       b
                       (/ (- n 1) 2))))))
 
+(define (my-expt2 b n)
+    (define (expt-iterf2 acc b n)
+      (cond
+        ((= n 0) acc)
+        ((even? n) (expt-iterf2 acc
+                                (square b)
+                                (/ n 2)))
+        (else (expt-iterf2 (* acc b)
+                           (square b)
+                           (/ (- n 1) 2)))))
+    (expt-iterf2 1 b n))
+
 
 ;;;;
 (define (fast-expt b n)
