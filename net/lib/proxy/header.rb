@@ -12,5 +12,26 @@ module Proxy
             headers
         end
 
+        def Header.parse_by_line(s)
+            headers = Hash.new
+            loop do
+                line = s.readline
+                break if line.length == 2
+                key, value = line.rstrip.split(': ')
+                headers[key] = value
+            end
+            headers
+        end
+
+    end
+
+    module Body
+
+        def Body.parse(h, body)
+        end
+
+        def Body.parse_chunked(h, body)
+        end
+
     end
 end
