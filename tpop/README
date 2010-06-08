@@ -1,0 +1,4 @@
+autoreconf --install 
+
+ideas:
+    - hash the anagrams
