@@ -1,8 +1,6 @@
 #include <searchlib.h>
 #include <tpop.h>
 
-
-
 enum { DLINIT = 1, DLGROW = 2 };
 
 int addword(DictWord *newword, DictList *list) {
@@ -18,7 +16,6 @@ int addword(DictWord *newword, DictList *list) {
         newwords = (DictWord *)realloc(list->words, (DLGROW * list->max) * sizeof(DictWord));
         if (newwords == NULL)
             return -1;
-        printf("DEBUG> grew list to %d\n", DLGROW * list->max);
         list->max *= DLGROW;
         list->words = newwords;
     }
@@ -26,7 +23,16 @@ int addword(DictWord *newword, DictList *list) {
     return list->nval++;
 }
 
-int load(char *path, DictList *list) {
+
+void swap(DictWord * words, int a, int b) {
+    DictWord tmp;
+
+    tmp = words[a];
+    words[a] = words[b];
+    words[b] = tmp;
+}
+
+int load(char *path, DictList *list, int max) {
     char line[256];
     char * nlc;
     int count = 0;
@@ -40,11 +46,11 @@ int load(char *path, DictList *list) {
     }
 
     while (fgets(line, 255, fd)) {
+        count++;
         nlc = strchr(line, '\n');
         if (nlc != NULL)
             *nlc = '\0';
 
-        printf("%-8d> %s\n", ++count, line);
         toadd = (DictWord *)malloc(sizeof(DictWord));
         if (toadd == NULL)
             return -1;
@@ -52,6 +58,10 @@ int load(char *path, DictList *list) {
         toadd->word = strdup(line);
         toadd->index = count;
         addword(toadd, list);
+        /* printf("%-8d> %s\n", list->nval, line); */
+        if (max > 0 && count >= max) {
+            break;
+        }
 
         if (feof(fd)) {
             break;
@@ -59,6 +69,19 @@ int load(char *path, DictList *list) {
     }
 
     return 1;
+}
+
+void reverse(DictList list) {
+    int i = 0;
+    for (i = 0; i < ( list.nval / 2 ); i++) {
+        fprintf(stderr, "R> swapping %d <=> %d (total %d)\n", 
+                i, list.nval - i, list.nval);
+        swap(list.words, i, list.nval - i - 1);
+    }
+}
+
+void sort(DictList *list) {
+
 }
 
 void display(DictList list) {

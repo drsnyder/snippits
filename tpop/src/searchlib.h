@@ -16,5 +16,8 @@ struct DictList {
 };
 
 int addword(DictWord *newword, DictList *list);
-int load(char *path, DictList *list);
+void swap(DictWord * words, int a, int b);
+void reverse(DictList list);
+int load(char *path, DictList *list, int max);
+void sort(DictList *list);
 void display(DictList list);
