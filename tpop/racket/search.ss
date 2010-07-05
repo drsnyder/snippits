@@ -1,6 +1,10 @@
 (module search mzscheme
 (require srfi/43)
     
+    ; (define debug
+    ;     (lambda (args) 
+    ;       ))
+    
     (define wordpart
       (lambda (wordlistelement)
         (car wordlistelement)))
@@ -31,8 +35,6 @@
         (list->vector (list-load-wordfile wordfile))))
 
 
-
-
     (define vector-swap
       (lambda (wordvector a b)
         (let ([tmp (vector-ref wordvector a)])
@@ -42,54 +44,70 @@
 
 
 
-; (let ( [offset 0] [len 10] )
-;     (do ((i offset (+ i 1)))
-;       ((= i (- (+ offset len) 1)))
-;       (display i)))
+(let ( [offset 0] [len 10] )
+    (do ((i offset (+ i 1)))
+      ((= i (+ offset len)))
+      (display i)))
 
+
+    (define wordvector-compare?
+      (lambda (a b)
+         (string<? (wordpart a) (wordpart  b))))
 
     (define vector-quicksort!
-      (lambda (wordvector)
+      (lambda (v f?)
 
         (define sort
-          (lambda (wv offset len)
-            (cond [(>= 1 len) wv]
+          (lambda (v offset len)
+            (cond [(>= 1 len)]
                   [else 
                     ; take the pivot from the middle
-                    (let ([p (truncate (/ (+ offset len) 2))] 
-                          [last 0])
+                    (let ([p (- (truncate (/ len 2)) 1)] 
+                          [last offset])
 
 
                         (fprintf (current-output-port) 
-                                 "set p to ~s offset ~s len ~s ~n" p offset len) 
-
-                        (vector-swap! wv 0 p)
+                                 "set p to ~s offset ~s len ~s ~n" (+ offset p) offset len) 
 
                         (fprintf (current-output-port) 
-                                 "wp ~s last ~s ~n" (wordpart (vector-ref wv p)) last) 
+                                 "swapping ~s with ~s ~n" (vector-ref v offset) 
+                                 (vector-ref v (+ offset p))) 
 
-                          (fprintf (current-output-port) "comparing ~s to ~s~n"  
-                                   (wordpart (vector-ref wv last))
-                                   (wordpart (vector-ref wv p)))
+                        (vector-swap! v offset (+ offset p))
 
-                        (do ((i offset (+ i 1)))
-                          ((= i (- (+ offset len) 1)))
+                        ; (fprintf (current-output-port) 
+                        ;          "wp ~s last ~s ~n" (wordpart (vector-ref v p)) last) 
 
-                          (fprintf (current-output-port) "comparing ~s to ~s~n"  
-                                   (wordpart (vector-ref wv i))
-                                   (wordpart (vector-ref wv last)))
-                          (flush-output (current-output-port)) 
+                        ;   (fprintf (current-output-port) "comparing ~s to ~s~n"  
+                        ;            (wordpart (vector-ref v last))
+                        ;            (wordpart (vector-ref v p)))
+
+                        (do ((i (+ offset 1) (+ i 1)))
+                          ((= i (+ offset len)))
+
+                          (fprintf (current-output-port) "looping ~s ~s ~s to ~s ~n" 
+                                   i offset len (+ offset (- len 1)))  
+                          ; (fprintf (current-output-port) "comparing ~s to ~s~n"  
+                          ;          (wordpart (vector-ref v i))
+                          ;          (wordpart (vector-ref v last)))
+                          ; (flush-output (current-output-port)) 
 
                           (cond
-                            [(string<? (wordpart (vector-ref wv i)) (wordpart (vector-ref wv last)))
-                             (and (vector-swap! wv i last) (set! last (+ last 1)))]))
+                            [(f? (vector-ref v i) (vector-ref v offset)) 
+                             (set! last (+ last 1)) 
+                             (vector-swap! v i last)
+                             ]))
 
-                        (vector-swap! wv 0 last)
+                        (vector-swap! v offset last)
 
-                        (sort wv offset (+ offset last))
-                        (sort wv (+ offset last 1) (- offset last 1)))]))) 
+                        (fprintf (current-output-port) "1:(sort v ~s ~s) o ~s l ~s ln ~s ~n" 
+                                 offset (- last offset) offset last len)  
+                        (sort v offset (- last offset))
+                        (fprintf (current-output-port) "2:(sort v ~s ~s) o ~s l ~s ln ~s ~n" 
+                                 (+ last 1) (- (+ offset len) last 1) offset last len)  
+                        (sort v (+ last 1) (- (+ offset len) last 1)))]))) 
 
-        (sort wordvector 0 (vector-length wordvector))))
+        (sort v 0 (vector-length v))))
 
 
     (define reverse-vector
@@ -149,5 +167,5 @@
     ;     (close-input-port in)
     ;     (cons wordvector loaded-values)))
 
-(provide load-wordfile  vector-swap reverse-vector vector-quicksort!))
+(provide load-wordfile  vector-swap reverse-vector vector-quicksort! wordvector-compare?))
 
