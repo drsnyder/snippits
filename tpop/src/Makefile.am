@@ -1,3 +1,5 @@
-bin_PROGRAMS = bsearch test_search
-bsearch_SOURCES = bsearch.c searchlib.c
-test_search_SOURCES = test_search.c searchlib.c 
+bin_PROGRAMS = bsearch test_search test_quicksort
+bsearch_SOURCES = bsearch.c searchlib.c 
+test_search_SOURCES = test_search.c searchlib.c
+test_quicksort_SOURCES = test_quicksort.c quicksort.c
+test_quicksort_LDFLAGS = -lc

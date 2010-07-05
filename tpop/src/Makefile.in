@@ -32,7 +32,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = bsearch$(EXEEXT) test_search$(EXEEXT)
+bin_PROGRAMS = bsearch$(EXEEXT) test_search$(EXEEXT) \
+	test_quicksort$(EXEEXT)
 subdir = src
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -48,6 +49,12 @@ PROGRAMS = $(bin_PROGRAMS)
 am_bsearch_OBJECTS = bsearch.$(OBJEXT) searchlib.$(OBJEXT)
 bsearch_OBJECTS = $(am_bsearch_OBJECTS)
 bsearch_LDADD = $(LDADD)
+am_test_quicksort_OBJECTS = test_quicksort.$(OBJEXT) \
+	quicksort.$(OBJEXT)
+test_quicksort_OBJECTS = $(am_test_quicksort_OBJECTS)
+test_quicksort_LDADD = $(LDADD)
+test_quicksort_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(test_quicksort_LDFLAGS) $(LDFLAGS) -o $@
 am_test_search_OBJECTS = test_search.$(OBJEXT) searchlib.$(OBJEXT)
 test_search_OBJECTS = $(am_test_search_OBJECTS)
 test_search_LDADD = $(LDADD)
@@ -59,8 +66,10 @@ COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 	$(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
-SOURCES = $(bsearch_SOURCES) $(test_search_SOURCES)
-DIST_SOURCES = $(bsearch_SOURCES) $(test_search_SOURCES)
+SOURCES = $(bsearch_SOURCES) $(test_quicksort_SOURCES) \
+	$(test_search_SOURCES)
+DIST_SOURCES = $(bsearch_SOURCES) $(test_quicksort_SOURCES) \
+	$(test_search_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -147,8 +156,10 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-bsearch_SOURCES = bsearch.c searchlib.c
-test_search_SOURCES = test_search.c searchlib.c 
+bsearch_SOURCES = bsearch.c searchlib.c 
+test_search_SOURCES = test_search.c searchlib.c
+test_quicksort_SOURCES = test_quicksort.c quicksort.c
+test_quicksort_LDFLAGS = -lc
 all: all-am
 
 .SUFFIXES:
@@ -223,6 +234,9 @@ clean-binPROGRAMS:
 bsearch$(EXEEXT): $(bsearch_OBJECTS) $(bsearch_DEPENDENCIES) 
 	@rm -f bsearch$(EXEEXT)
 	$(LINK) $(bsearch_OBJECTS) $(bsearch_LDADD) $(LIBS)
+test_quicksort$(EXEEXT): $(test_quicksort_OBJECTS) $(test_quicksort_DEPENDENCIES) 
+	@rm -f test_quicksort$(EXEEXT)
+	$(test_quicksort_LINK) $(test_quicksort_OBJECTS) $(test_quicksort_LDADD) $(LIBS)
 test_search$(EXEEXT): $(test_search_OBJECTS) $(test_search_DEPENDENCIES) 
 	@rm -f test_search$(EXEEXT)
 	$(LINK) $(test_search_OBJECTS) $(test_search_LDADD) $(LIBS)
@@ -234,7 +248,9 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bsearch.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/quicksort.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/searchlib.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_quicksort.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_search.Po@am__quote@
 
 .c.o:
