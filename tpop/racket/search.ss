@@ -52,6 +52,8 @@
       (lambda (v f?)
 
         (define sort
+          ; using offset makes the index calculations more confusing. i think
+          ; if i did it again i would use a left and right index 
           (lambda (v offset len)
             (cond [(> len 1)
                     ; take the pivot from the middle
@@ -72,6 +74,8 @@
                         (vector-swap! v offset last)
 
                         (sort v offset (- last offset))
+                        ; (sort v left last)
+                        ; (sort v left+1, right)
                         (sort v (+ last 1) (- (+ offset len) last 1)))]))) 
 
         (sort v 0 (vector-length v))))

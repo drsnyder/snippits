@@ -23,6 +23,18 @@ int addword(DictWord *newword, DictList *list) {
     return list->nval++;
 }
 
+int delword(char * word, DictList *list) {
+    int index = 0;
+    index = dlsearch(*list, word);
+    if (index < 0) {
+        return 0;
+    }
+
+    memmove(list->words + index, list->words + index + 1,
+            (list->nval-(index+1)) * sizeof(DictWord));
+    list->nval--;
+    return 1;
+}
 
 void swap(DictWord * words, int a, int b) {
     DictWord tmp;
@@ -80,8 +92,50 @@ void reverse(DictList list) {
     }
 }
 
-void sort(DictList *list) {
+void _dlqsort(DictWord * words, int n) {
+    int i, last;
 
+    if (n <= 1)
+        return;
+
+    swap(words, 0, random() % n);
+
+    last = 0;
+    for (i = 1; i < n; i++) {
+        if (strcasecmp(words[i].word, words[0].word) < 0) {
+            swap(words, ++last, i);
+        }
+    }
+    swap(words, 0, last);             // restore pivot
+    _dlqsort(words, last);            // front set
+    _dlqsort(words+last+1, n-last-1); // back set
+
+}
+
+void dlqsort(DictList list) {
+    _dlqsort(list.words, list.nval);
+}
+
+
+int dlsearch(DictList list, char * word) {
+    int low, high, mid, cmp;
+
+    low = 0;
+    high = list.nval - 1;
+    while (low <= high) {
+        /* fprintf(stderr, "D> low %d high %d\n", low, high); */
+        mid = (low + high) / 2;
+        cmp = strcmp(word, list.words[mid].word);
+        if (cmp < 0) {
+            high = mid - 1;
+        } else if (cmp > 0) {
+            low = mid + 1;
+        } else {
+            return mid;
+        }
+    }
+
+    return -1;
 }
 
 void display(DictList list) {

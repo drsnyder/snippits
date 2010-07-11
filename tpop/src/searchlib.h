@@ -15,9 +15,14 @@ struct DictList {
     DictWord *words;
 };
 
-int addword(DictWord *newword, DictList *list);
 void swap(DictWord * words, int a, int b);
+void dlqsort(DictList list);
+int dlsearch(DictList list, char * word);
+
 void reverse(DictList list);
+
 int load(char *path, DictList *list, int max);
-void sort(DictList *list);
+int addword(DictWord *newword, DictList *list);
+int delword(char * word, DictList *list);
+
 void display(DictList list);

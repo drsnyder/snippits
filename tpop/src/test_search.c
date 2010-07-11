@@ -28,7 +28,7 @@ int reversed(DictList list) {
 }
 
 int main(void) {
-    int ret = 0;
+    int ret = 0, i = 0, index = 0;
     DictList list;
     DictList listsmall;
     DictWord one;
@@ -53,8 +53,25 @@ int main(void) {
     fprintf(stderr, ">>> testing reverse \n"); 
     reverse(list);
     assert(reversed(list) && "the list was not reversed");
-    display(list);
+    /* display(list); */
 
+
+    dlqsort(list);
+    fprintf(stdout, "<<<<< sorted >>>>>>>>\n"); 
+    display(list);
+    for (i = 1; i < list.nval; i++) {
+        fprintf(stderr, "testing %s < %s\n", list.words[i - 1].word, list.words[i].word); 
+        assert(( strcasecmp(list.words[i - 1].word, list.words[i].word) <= 0 ) && "not sorted"); 
+    }
+
+    index = dlsearch(list, "searching");
+    assert((index > 0) && "found 'searching'");
+    assert((strcmp(list.words[index].word, "searching") == 0) && "got the right index");
+
+    ret = delword("searching", &list);
+    assert(ret && "deleted 'searching'");
+    index = dlsearch(list, "searching");
+    assert((index < 0) && "removed 'searching'");
 
     return 0;
 }
