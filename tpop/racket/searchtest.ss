@@ -29,8 +29,7 @@
       (fprintf (current-output-port) "> ~s ~s~n" 
                (vector-ref rv i) 
                (vector-ref rv (- i 1)))
-       (check > (vector-ref rv i) (vector-ref rv (- i 1))))
-    )
+       (check > (vector-ref rv i) (vector-ref rv (- i 1)))))
 
 ; (check-equal? 2 2 "Simple addition")
 ; (check-equal? 1 2 "Simple multiplication")

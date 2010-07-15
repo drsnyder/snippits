@@ -1,6 +1,17 @@
 (module search mzscheme
 ; provides vector-reverse!, vector-swap!
 ; (require srfi/43)
+; provides vector-copy
+(require racket/vector)
+    (define-syntax while
+      (syntax-rules ()
+                    ((while condition body ...)
+                     (let loop ()
+                       (if condition
+                         (begin
+                           body ...
+                           (loop))
+                         #f)))))
     
     ; (define debug
     ;     (lambda (args) 
@@ -30,6 +41,7 @@
         (close-input-port in)
         (reverse words)))
 
+    
     ; load the wordfile as a list and return it as a vector
     (define load-wordfile
       (lambda (wordfile)
@@ -44,9 +56,37 @@
 
 
 
+    ; compare the wordpart of two vectors
     (define wordvector-compare?
       (lambda (a b)
          (string<? (wordpart a) (wordpart  b))))
+
+
+    (define vector-delete!
+      (lambda (v index)
+        (cond [(or (>= index (vector-length v)) (> 0 index)) v]
+              [(= index 0) (vector-copy v 1 (vector-length v))]
+              [(= index (- (vector-length v) 1)) (vector-copy v 0 (- (vector-length v) 1))]
+              [else (vector-append 
+                      (vector-copy v 0 index) 
+                      (vector-copy v (+ index 1) (vector-length v)))])))
+
+    ; returns the index or #f if not found
+    ; use with a vector of numbers (vector-search v1 85 (lambda (x) x))
+    (define vector-search
+      (lambda (v s f?)
+        (let/ec return
+          (let while ([low 0] 
+                      [high (- (vector-length v) 1)])
+            (let ([mid (round (/ (+ low high) 2))])
+                  (fprintf (current-output-port) "low ~s med ~s high ~s~n" low mid high)
+                (unless (>= low high)
+
+                  (cond [(= (f? (vector-ref v mid)) s) (return mid)]
+                        [(> (f? (vector-ref v mid)) s) (while low mid)]
+                        [else (while mid high)]))))
+          #f)))
+
 
     (define vector-quicksort!
       (lambda (v f?)
@@ -81,7 +121,7 @@
         (sort v 0 (vector-length v))))
 
 
-    (define reverse-vector
+    (define reverse-vector!
       (lambda (wv n)
         (do ((i 0 (+ i 1))) 
           ((= i (/ n 2))) 
@@ -143,5 +183,6 @@
     ;       ((= i (+ offset len)))
     ;       (display i)))
 
-(provide load-wordfile  vector-swap! reverse-vector vector-quicksort! wordvector-compare?))
+(provide load-wordfile  vector-swap! reverse-vector! vector-quicksort! 
+         vector-delete! wordvector-compare?))
 
