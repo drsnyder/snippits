@@ -24,4 +24,3 @@ void quicksort(int v[], int n) {
     quicksort(v, last);            // front set
     quicksort(v+last+1, n-last-1); // back set
 }
-
