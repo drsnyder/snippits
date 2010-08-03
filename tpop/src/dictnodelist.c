@@ -116,3 +116,24 @@ DictNode* dict_node_insert_before(DictNode *listp, char * word, DictNode * node)
     return NULL; // not found
 }
 
+
+
+void dict_node_apply(DictNode * listp, void (*fn)(DictNode *, void *), void * arg) {
+    for (; listp != NULL; listp = listp->next) {
+        (*fn)(listp, arg);
+    }
+}
+
+void printdn(DictNode * p, void *arg) {
+    char * fmt;
+    fmt = (char *) arg;
+    printf(fmt, p->word);
+}
+
+void dnlen(DictNode * p, void *arg) {
+    int * len;
+    len = (int *) arg;
+    (*len)++;
+}
+
+

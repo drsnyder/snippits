@@ -33,7 +33,8 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 bin_PROGRAMS = bsearch$(EXEEXT) test_search$(EXEEXT) \
-	test_quicksort$(EXEEXT) test_dictnodelist$(EXEEXT)
+	test_quicksort$(EXEEXT) test_dictnodelist$(EXEEXT) \
+	test_vtree$(EXEEXT) test_hash$(EXEEXT)
 subdir = src
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -53,6 +54,12 @@ am_test_dictnodelist_OBJECTS = test_dictnodelist.$(OBJEXT) \
 	dictnodelist.$(OBJEXT)
 test_dictnodelist_OBJECTS = $(am_test_dictnodelist_OBJECTS)
 test_dictnodelist_LDADD = $(LDADD)
+am_test_hash_OBJECTS = test_hash.$(OBJEXT) hash.$(OBJEXT) \
+	dictnodelist.$(OBJEXT)
+test_hash_OBJECTS = $(am_test_hash_OBJECTS)
+test_hash_LDADD = $(LDADD)
+test_hash_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(test_hash_LDFLAGS) \
+	$(LDFLAGS) -o $@
 am_test_quicksort_OBJECTS = test_quicksort.$(OBJEXT) \
 	quicksort.$(OBJEXT)
 test_quicksort_OBJECTS = $(am_test_quicksort_OBJECTS)
@@ -62,6 +69,11 @@ test_quicksort_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
 am_test_search_OBJECTS = test_search.$(OBJEXT) searchlib.$(OBJEXT)
 test_search_OBJECTS = $(am_test_search_OBJECTS)
 test_search_LDADD = $(LDADD)
+am_test_vtree_OBJECTS = test_vtree.$(OBJEXT) vtree.$(OBJEXT)
+test_vtree_OBJECTS = $(am_test_vtree_OBJECTS)
+test_vtree_LDADD = $(LDADD)
+test_vtree_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(test_vtree_LDFLAGS) \
+	$(LDFLAGS) -o $@
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -71,9 +83,11 @@ COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
 CCLD = $(CC)
 LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@
 SOURCES = $(bsearch_SOURCES) $(test_dictnodelist_SOURCES) \
-	$(test_quicksort_SOURCES) $(test_search_SOURCES)
+	$(test_hash_SOURCES) $(test_quicksort_SOURCES) \
+	$(test_search_SOURCES) $(test_vtree_SOURCES)
 DIST_SOURCES = $(bsearch_SOURCES) $(test_dictnodelist_SOURCES) \
-	$(test_quicksort_SOURCES) $(test_search_SOURCES)
+	$(test_hash_SOURCES) $(test_quicksort_SOURCES) \
+	$(test_search_SOURCES) $(test_vtree_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -165,6 +179,10 @@ test_search_SOURCES = test_search.c searchlib.c
 test_quicksort_SOURCES = test_quicksort.c quicksort.c
 test_quicksort_LDFLAGS = -lc
 test_dictnodelist_SOURCES = test_dictnodelist.c dictnodelist.c
+test_vtree_SOURCES = test_vtree.c vtree.c
+test_vtree_LDFLAGS = -lc
+test_hash_SOURCES = test_hash.c hash.c dictnodelist.c
+test_hash_LDFLAGS = -lc
 all: all-am
 
 .SUFFIXES:
@@ -242,12 +260,18 @@ bsearch$(EXEEXT): $(bsearch_OBJECTS) $(bsearch_DEPENDENCIES)
 test_dictnodelist$(EXEEXT): $(test_dictnodelist_OBJECTS) $(test_dictnodelist_DEPENDENCIES) 
 	@rm -f test_dictnodelist$(EXEEXT)
 	$(LINK) $(test_dictnodelist_OBJECTS) $(test_dictnodelist_LDADD) $(LIBS)
+test_hash$(EXEEXT): $(test_hash_OBJECTS) $(test_hash_DEPENDENCIES) 
+	@rm -f test_hash$(EXEEXT)
+	$(test_hash_LINK) $(test_hash_OBJECTS) $(test_hash_LDADD) $(LIBS)
 test_quicksort$(EXEEXT): $(test_quicksort_OBJECTS) $(test_quicksort_DEPENDENCIES) 
 	@rm -f test_quicksort$(EXEEXT)
 	$(test_quicksort_LINK) $(test_quicksort_OBJECTS) $(test_quicksort_LDADD) $(LIBS)
 test_search$(EXEEXT): $(test_search_OBJECTS) $(test_search_DEPENDENCIES) 
 	@rm -f test_search$(EXEEXT)
 	$(LINK) $(test_search_OBJECTS) $(test_search_LDADD) $(LIBS)
+test_vtree$(EXEEXT): $(test_vtree_OBJECTS) $(test_vtree_DEPENDENCIES) 
+	@rm -f test_vtree$(EXEEXT)
+	$(test_vtree_LINK) $(test_vtree_OBJECTS) $(test_vtree_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -257,11 +281,15 @@ distclean-compile:
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bsearch.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/dictnodelist.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/hash.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/quicksort.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/searchlib.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_dictnodelist.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_hash.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_quicksort.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_search.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/test_vtree.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/vtree.Po@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

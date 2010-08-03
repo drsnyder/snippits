@@ -22,3 +22,8 @@ DictNode* dict_node_rreverse(DictNode *listp);
 DictNode* dict_node_find(DictNode *listp, char * word);
 DictNode* dict_node_insert_before(DictNode *listp, char * word, DictNode * node);
 DictNode* dict_node_insert_after(DictNode *listp, char * word, DictNode * node);
+
+void dict_node_apply(DictNode * listp, void (*fn)(DictNode *, void *), void * arg);
+void printdn(DictNode * p, void *arg);
+void dnlen(DictNode * p, void *arg);
+

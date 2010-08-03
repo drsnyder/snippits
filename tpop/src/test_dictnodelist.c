@@ -16,6 +16,7 @@ void test_list_order(DictNode *listp, char *words[], int n) {
 }
 
 int main(void) {
+    int length = 0;
     DictNode * list = NULL, * listp = NULL;
     char *words[] = {"dietrich", "damon", "alice", "alexis" };
     char *words_after[] = {"dietrich", "diydiy", "damon", "alice", "alexis" };
@@ -52,6 +53,10 @@ int main(void) {
     listp = dict_node_insert_before(list, "alice", new_dict_node("nana"));
     assert((listp != NULL) && "insert succeded");
     test_list_order(listp, words_before, sizeof(words_before) / sizeof(char*));
+
+    dict_node_apply(listp, printdn, "dn %s\n");
+    dict_node_apply(listp, dnlen, &length);
+    assert((length == 6) && "dnlen got the right count");
 
     return 0;
 }
