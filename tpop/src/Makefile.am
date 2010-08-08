@@ -11,5 +11,5 @@ test_dictnodelist_SOURCES = test_dictnodelist.c dictnodelist.c
 test_vtree_SOURCES = test_vtree.c vtree.c
 test_vtree_LDFLAGS = -lc
 
-test_hash_SOURCES = test_hash.c hash.c dictnodelist.c
+test_hash_SOURCES = test_hash.c hash.c dictnodelist.c searchlib.c
 test_hash_LDFLAGS = -lc

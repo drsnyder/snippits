@@ -55,7 +55,7 @@ am_test_dictnodelist_OBJECTS = test_dictnodelist.$(OBJEXT) \
 test_dictnodelist_OBJECTS = $(am_test_dictnodelist_OBJECTS)
 test_dictnodelist_LDADD = $(LDADD)
 am_test_hash_OBJECTS = test_hash.$(OBJEXT) hash.$(OBJEXT) \
-	dictnodelist.$(OBJEXT)
+	dictnodelist.$(OBJEXT) searchlib.$(OBJEXT)
 test_hash_OBJECTS = $(am_test_hash_OBJECTS)
 test_hash_LDADD = $(LDADD)
 test_hash_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(test_hash_LDFLAGS) \
@@ -181,7 +181,7 @@ test_quicksort_LDFLAGS = -lc
 test_dictnodelist_SOURCES = test_dictnodelist.c dictnodelist.c
 test_vtree_SOURCES = test_vtree.c vtree.c
 test_vtree_LDFLAGS = -lc
-test_hash_SOURCES = test_hash.c hash.c dictnodelist.c
+test_hash_SOURCES = test_hash.c hash.c dictnodelist.c searchlib.c
 test_hash_LDFLAGS = -lc
 all: all-am
 

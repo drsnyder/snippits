@@ -62,6 +62,10 @@ DictNode* dict_node_rreverse(DictNode *listp) {
 
 DictNode* dict_node_find(DictNode *listp, char * word) {
     int cmp = 0;
+
+    if (listp == NULL)
+        return NULL;
+
     for (; listp != NULL; listp = listp->next) {
         cmp = strcmp(listp->word, word);
         if (cmp == 0) {
@@ -127,7 +131,7 @@ void dict_node_apply(DictNode * listp, void (*fn)(DictNode *, void *), void * ar
 void printdn(DictNode * p, void *arg) {
     char * fmt;
     fmt = (char *) arg;
-    printf(fmt, p->word);
+    printf(fmt, p->value, p->word);
 }
 
 void dnlen(DictNode * p, void *arg) {

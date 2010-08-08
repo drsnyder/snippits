@@ -54,7 +54,7 @@ int main(void) {
     assert((listp != NULL) && "insert succeded");
     test_list_order(listp, words_before, sizeof(words_before) / sizeof(char*));
 
-    dict_node_apply(listp, printdn, "dn %s\n");
+    dict_node_apply(listp, printdn, "dn %s %d\n");
     dict_node_apply(listp, dnlen, &length);
     assert((length == 6) && "dnlen got the right count");
 

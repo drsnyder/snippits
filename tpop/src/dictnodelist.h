@@ -5,6 +5,7 @@
 typedef struct DictNode DictNode;
 struct DictNode {
     char     * word;
+    int      value;
     DictNode * next;
 };
 
