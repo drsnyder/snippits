@@ -1,0 +1,22 @@
+Dirs:
+    src/
+    classes/
+    clojure/example/hello.clj
+
+REPL:
+    # The ./src and the ./classes dirs are required.
+    java -cp ./src:./classes:/Users/drsnyder/local/clojure-1.1.0/clojure.jar clojure.main
+    Clojure 1.1.0
+    user=> (compile 'clojure.example.hello')
+
+RUN:
+    java -cp ./classes/:/Users/drsnyder/local/clojure-1.1.0/clojure.jar clojure.example.hello Bob
+
+clojure/example/hello.clj:
+(ns clojure.example.hello
+      (:gen-class))
+ 
+(defn -main
+    [greetee]
+    (println (str "Hello " greetee "!")))
+
