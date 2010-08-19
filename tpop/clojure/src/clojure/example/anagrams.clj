@@ -1,12 +1,10 @@
-
 (ns clojure.example.anagrams
   (:require clojure.contrib.profile)
   (:require clojure.contrib.duck-streams)
   (:gen-class))
  
 ;(use 'clojure.test')
-
-;(use 'clojure.contrib.duck-streams)
+(use 'clojure.contrib.duck-streams)
 
 (set! *warn-on-reflection* true)
 
@@ -15,12 +13,12 @@
 ;                    (java.io.FileReader. file))]
 ;    (doall (line-seq rdr))))
 
-(defn str-sort[str]
+(defn str-sort[#^String str]
   (if (nil? str)
     str
   (String. (into-array (. Character TYPE) (sort str)))))
 
-(defn str-to-lower[str]
+(defn str-to-lower[#^String str]
   (if (nil? str)
     str
     (.toLowerCase str)))
@@ -55,7 +53,8 @@
 
 ;(def *words* (f-to-seq "/usr/share/dict/web2"))
 ;(def *anagrams* (sort-by anagram-key (build-anagrams *words*)))
-;(def *anagrams* (sort-by anagram-key (build-anagrams (read-lines "/usr/share/dict/web2"))))
+(time (def *anagrams* (sort-by anagram-key (build-anagrams (read-lines "/usr/share/dict/web2")))))
+(time (build-anagrams (read-lines "/usr/share/dict/web2")))
 ;(print-anagrams (take 10 (reverse *anagrams*)))
 
 ;(build-anagrams (take 5 words))
