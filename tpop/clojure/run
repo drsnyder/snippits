@@ -1,0 +1,3 @@
+#!/bin/sh
+# export CLASSPATH=/Users/drsnyder/playground/snippits/tpop/clojure/classes
+java -cp $CLASSPATH:/Users/drsnyder/local/vimclojure-2.1.2/classes:/Users/drsnyder/local/clojure-1.1.0/clojure.jar:/Users/drsnyder/local/clojure-1.1.0/clojure-contrib.jar:build/vimclojure.jar com.martiansoftware.nailgun.NGServer 127.0.0.1
