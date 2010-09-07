@@ -1,6 +1,7 @@
 (ns clojure.example.anagrams
   (:require clojure.contrib.profile)
   (:require clojure.contrib.duck-streams)
+  (:require clojure.contrib.seq-utils)
   (:gen-class))
  
 (defn str-sort[string]
@@ -37,9 +38,14 @@
     (- (:count (second elem)))) 
 
 
-;(def *words* (f-to-seq "/usr/share/dict/web2")) 
+;(def *words* (clojure.contrib.duck-streams/read-lines "/usr/share/dict/web2")) 
 ;(def *anagrams* (sort-by anagram-key (build-anagrams *words*)))
 ;(print-anagrams (take 10 *anagrams*)) 
+;(time (print-anagrams 
+;        (take 10 
+;              (sort-by anagram-key 
+;                       (build-anagrams 
+;                         (clojure.contrib.duck-streams/read-lines "/usr/share/dict/web2")))))))
 
 (defn -main[file]
   (time (print-anagrams 

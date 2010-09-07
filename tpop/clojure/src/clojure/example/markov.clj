@@ -4,15 +4,20 @@
   (:gen-class))
 
 ; for repl
-(use 'clojure.contrib.seq-utils)
-(use 'clojure.contrib.duck-streams)
-(import java.util.Random) 
-(def *rand* (new Random))
+;(use 'clojure.contrib.seq-utils)
+;(use 'clojure.contrib.duck-streams)
+;(import java.util.Random) 
+;
+;(def *rand* (new Random))
 
+(def *nonword* "\n")
 
+(defn tokenize[line]
+  (vec (.split line " ")))
 
 (defn prefix[one & rest]
   (reduce #(conj %1 %2) (vector one) rest))
+
  
 (defn prefix-pos-n[prefix n]
   (get prefix n))
@@ -21,7 +26,7 @@
   (reduce #(str %1 "" %2) prefix))
 
 (defn prefix-add[prefix toadd]
-  (conj (rest prefix) toadd))
+  (conj (subvec prefix 1) toadd))
 
 (defn prefix-equal?[one two]
   (if (= (count one) (count two))
@@ -29,43 +34,52 @@
     false))
 
 (defn chain-add[table prefix word]
-    (if (contains? table prefix)
-      (update-in table (prefix-hash prefix) conj word)
+    (if (contains? table (prefix-hash prefix))
+      (update-in table [(prefix-hash prefix)] conj word)
       (assoc table (prefix-hash prefix) (vector word))))
   
 (defn random-chain-word[table prefix]
   (let [wordlist (get table (prefix-hash prefix))]
-    (get wordlist (rem (. Math abs (. *rand* nextInt)) (count wordlist)))))
+    (do 
+      ;(println (str "r-c-w " wordlist "~" prefix))
+      (get wordlist (rand-int (count wordlist)))
+      )))
 
 (defn chain-build[table prefix words]
-  (do 
-    (println (str "table " table))
-    (println (str "prefix " prefix))
-    (println (str "words " words))
-
     (if (not (empty? words))
       (recur (chain-add table prefix (first words)) 
              (prefix-add prefix (first words)) 
              (rest words))
-      table)))
-
-(defn line-to-words[line]
-  (doall (re-seq #"\w+" line)))
+      ; add the end marker 
+      (chain-add table prefix *nonword*)))
 
 (defn file-to-words[file]
-  (clojure.contrib.seq-utils/flatten 
+  (vec (clojure.contrib.seq-utils/flatten 
     (reduce 
-      #(conj %1 (line-to-words %2)) 
-      () (clojure.contrib.duck-streams/read-lines file))))
+      #(conj %1 (tokenize %2)) 
+      [] (clojure.contrib.duck-streams/read-lines file)))))
 
+(defn generate[table nwords]
+  (loop [i 1 prefix (prefix *nonword* *nonword*)]
+    (let [suf (random-chain-word table prefix)]
+      (when 
+        (and (< i nwords) (not= suf *nonword*) (not= suf nil))
+          (if (= (rem i 5) 0)
+            (println suf)
+            (print (str suf " ")))
+          (recur (inc i) (prefix-add prefix suf))))))
 
-(def words (file-to-words "/Users/drsnyder/tmp/bib1910.txt")) 
-(chain-build {} (prefix "\n" "\n") (take 5 words))
+;(def words (file-to-words "/Users/drsnyder/tmp/bib1910.txt")) 
+;(def table (chain-build {} (prefix "\n" "\n") (take 100 words)))
+;
+;(def words (file-to-words "/Users/drsnyder/playground/snippits/tpop/clojure/t/data/markov-1.txt")) 
+;(def table (chain-build {} (prefix "\n" "\n") words))
+;
+;(def words (file-to-words "/Users/drsnyder/playground/snippits/tpop/clojure/t/data/markov-2.txt")) 
+;(def table (chain-build {} (prefix "\n" "\n") words))
+;(generate table 1000)
 
-
-(defn -main[file]
-  (time (print-anagrams 
-          (take 10 
-                (sort-by anagram-key 
-                         (build-anagrams 
-                           (clojure.contrib.duck-streams/read-lines file)))))))
+(defn -main[file nwords]
+  (def words (file-to-words file)) 
+  (def table (chain-build {} (prefix "\n" "\n") words))
+  (generate table (Integer. nwords)))
