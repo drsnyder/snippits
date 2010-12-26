@@ -1,0 +1,26 @@
+#!/bin/sh
+breakchars="(){}[],^%$#@\"\";:''|\\"
+CLOJURE_DIR=$HOME/local/clojure-1.2.0
+CLOJURE_JAR=$CLOJURE_DIR/clojure.jar
+CONTRIB_JAR=$CLOJURE_DIR/clojure-contrib.jar
+CLOJURE_CP=$CLOJURE_JAR:$CONTRIB_JAR:$PWD
+
+#JAVA_DEBUG_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8888 \
+JAVA_DEBUG_OPTS=
+
+if [ -f .clojure ]; then
+    CLOJURE_CP=$CLOJURE_CP:`cat .clojure`
+fi
+
+if [ $# -eq 0 ]; then
+    exec rlwrap --remember -c -b $breakchars \
+                -f $HOME/.clj_completions \
+                java -server $JAVA_DEBUG_OPTS \
+                -cp .:$CLOJURE_CP clojure.main -i $HOME/.clojure.clj --repl
+else
+    echo "in else"
+    echo $1
+    echo $@
+     exec java -server $JAVA_DEBUG_OPTS \
+          -cp .:$CLOJURE_CP clojure.main -i $HOME/.clojure.clj $1 -- $@
+fi
