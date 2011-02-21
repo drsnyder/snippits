@@ -40,7 +40,7 @@ int heap_insert(Heap * heap, int index, char * key, int rank, int direction) {
     // insert the object being added at the leaf
     heap->objects[heap->nval] = *to_insert;
     
-    // reshuffle at the leaf
+    // reshuffle at the leaf; simple siftdow
     for (i = heap->nval; i > 1; i = parent) {
         parent = i / 2;
         if (heap->objects[parent].rank > heap->objects[i].rank) {
@@ -64,6 +64,7 @@ HeapObject top(Heap * heap, int direction) {
     heap->objects[1] = heap->objects[heap->nval];
     heap->nval--;
 
+    // sift down while preserving ordering
     for (i = 1; (child = 2 * i) <= heap->nval; i = child) {
         if ((child + 1) <= heap->nval && heap->objects[child + 1].rank < heap->objects[child].rank) 
             child++;
