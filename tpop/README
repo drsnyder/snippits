@@ -1,4 +1,6 @@
 autoreconf --install 
+vim src/Makefile.am # add additional libs here
 
 ideas:
     - hash the anagrams
+
