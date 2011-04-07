@@ -1,5 +1,5 @@
 
-(use 'clj-ssh.sh)
+(use 'clj-ssh.ssh)
 (use 'clojure.contrib.logging)
 
 (import [com.jcraft.jsch JSch])
@@ -50,4 +50,8 @@
              results
              (recur (rest cmds) (conj results (second (ssh session (first cmds)))))))))))
 
-(send-commands "localhost" ["ls" "hostname"] :id "/home/drsnyder/.ssh/id_dsa")
+(defn send-command [host command &key id]
+  (send-commands host command :id id))
+
+(send-commands "rudy.huddler.com" ["ls" "hostname"] :id "/Users/drsnyder/.ssh/id_rsa")
+(send-command "rudy.huddler.com" ["hostname"] :id "/Users/drsnyder/.ssh/id_rsa")
