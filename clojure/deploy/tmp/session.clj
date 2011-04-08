@@ -40,9 +40,11 @@
       (let [result (ssh session "/bin/bash" "-c" "ls" "/")]
         (println (second result))))))
 
-(defn send-commands [host commands &key id]
+
+
+(defn send-commands [host commands & {:keys [id] :or {id nil}} ]
   (with-ssh-agent [false]
-    (if (not (nil? id)) (add-identity id))
+    (if (not (nil? id)) (add-identity id) (add-identity (default-identity)))
     (let [session (session host :strict-host-key-checking :no)]
       (with-connection session
          (loop [cmds commands results []]
@@ -50,8 +52,43 @@
              results
              (recur (rest cmds) (conj results (second (ssh session (first cmds)))))))))))
 
-(defn send-command [host command &key id]
-  (send-commands host command :id id))
+(defn send-command [host command & {:keys [id] :or {id nil}} ]
+  (send-commands host [command] :id id))
 
-(send-commands "rudy.huddler.com" ["ls" "hostname"] :id "/Users/drsnyder/.ssh/id_rsa")
-(send-command "rudy.huddler.com" ["hostname"] :id "/Users/drsnyder/.ssh/id_rsa")
+(send-commands "rudy.huddler.com" ["ls" "hostname"] :id "/Users/drsnyder/.ssh/id_dsa")
+(send-commands "rudy.huddler.com" ["ls" "hostname"])
+(send-command "rudy.huddler.com" "hostname" :id "/Users/drsnyder/.ssh/id_rsa")
+
+;(with-role web-app
+;           (deploy-code args)
+;           (run "some command")
+;           (link-code args)
+;           (purge-cache args)
+;           (run "some other command"))
+
+(def *role* nil)
+
+(def web {:hosts ["rudy.huddler.com", "newdy.huddler.com"]})
+
+(defmacro with-role
+  ([role-binding & body]
+   `(binding [*role* ~role-binding]
+      (do ~@body))))
+
+(defn run [cmd]
+  (loop [hosts (*role* :hosts)]
+    (let [host (first hosts)]
+      (when (not (nil? host))
+        (do (println (str "=> " (send-command host cmd)))
+          (recur (rest hosts)))))))
+
+(defn deploy-code [] ; :filter => somefunk, :only, :except
+  (println (format "binding *role* is %s" (str *role*))))
+
+(with-role web
+           (run "hostname"))
+
+(with-role {:hosts ["rudy.huddler.com"]}
+           (deploy-code))
+
+(ssh "rudy.huddler.com" "hostname")
