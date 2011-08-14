@@ -75,7 +75,8 @@
 10s yes
 
 
-;  f(n) = n if n<3
+; 1.11
+; f(n) = n if n<3
 ; f(n) = f(n - 1) + 2f(n - 2) + 3f(n - 3) 
 (define (f3 n)
   (cond ((< n 3) n)
@@ -83,14 +84,46 @@
                  (* 2 (f3 (- n 2)))
                  (* 3 (f3 (- n 3)))))))
 
+
+
 (define (f a b c) (+ a (* 2 b) (* 3 c)))
 
 (define (f3-iter a b c n)
+  ; if n = 3 then compute f with the current values for a, b, c  
   (cond ((= n 3) (f a b c))
+        ; compute new a, shift a, b back one
         (else (f3-iter (f a b c) a b (- n 1)))))
-
 
 (define (f3i n)
   (cond ((< n 3) n)
+        ; initial values for a, b, c when n >= 3
         (else (f3-iter 2 1 0 n))))
 
+
+
+
+; another solution
+(define (fi n)
+  (define (fi-iter a b c count)
+    ; f(n) = a + b + c = f(n-1) + 2f(n-2) + 3f(n-3).
+    ; Use f(n) to calculate f(n+1) = f(n) + 2f(n-1) + 3f(n-2).
+    (if (= count (+ n 1))
+        a
+        (fi-iter (+ a b c) (* 2 a) (* 3 (/ b 2)) (+ count 1))))
+  (if (< n 3)
+      n
+      ; f(3) = f(2) + 2f(1) + 3f(0).
+      (fi-iter 2 2 0 3)))
+
+
+; 1.12 compute the elements of pascals triangle via recursive process
+(define (pt-cols r)
+    (+ r 1))
+
+(define (pt r c)
+    (cond ((or (< (pt-cols r) c) (> 0 c)) 0) ; out of bounds
+          ((< r 0) 0) ; off the top
+          ((= c 0) 1) ; base
+          (else (+ (pt (- r 1) (- c 1)) (pt (- r 1) c)))))
+        
+    
