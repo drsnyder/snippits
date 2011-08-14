@@ -23,6 +23,10 @@
   (sqrt-iter 1.0 x x))
 
 
+(if exp-a (serve-request) (delete-server))
+
+(define (a-plus-abs-b a b)
+  ((if (> b 0) + -) a b))
 
 
 (sqrt 3)
@@ -30,3 +34,13 @@
 (sqrt 4294967296)
 (sqrt (+ 1099511627776 5))
 (sqrt 0.002)
+
+
+(define (min2 x y) (if (<= x y) x y))
+(define (max2 x y) (if (>= x y) x y))
+(define (square n) (* n n))
+
+
+(define (sum-square-greater2 a b c)
+    (+ (square (max2 a b)) 
+       (square (max2 (min2 a b) c))))
